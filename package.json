@@ -1,0 +1,15 @@
+{
+  "name": "prefixquiz",
+  "version": "1.0.0",
+  "description": "Guess country prefixes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "copyfiles -u 1 src/* dist"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "copyfiles": "^2.4.1"
+  }
+}

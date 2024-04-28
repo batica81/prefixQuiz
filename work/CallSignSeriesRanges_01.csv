@@ -1,0 +1,953 @@
+Prefix,Country
+2A,United Kingdom of Great Britain and Northern Ireland
+2B,United Kingdom of Great Britain and Northern Ireland
+2C,United Kingdom of Great Britain and Northern Ireland
+2D,United Kingdom of Great Britain and Northern Ireland
+2E,United Kingdom of Great Britain and Northern Ireland
+2F,United Kingdom of Great Britain and Northern Ireland
+2G,United Kingdom of Great Britain and Northern Ireland
+2H,United Kingdom of Great Britain and Northern Ireland
+2I,United Kingdom of Great Britain and Northern Ireland
+2J,United Kingdom of Great Britain and Northern Ireland
+2K,United Kingdom of Great Britain and Northern Ireland
+2L,United Kingdom of Great Britain and Northern Ireland
+2M,United Kingdom of Great Britain and Northern Ireland
+2N,United Kingdom of Great Britain and Northern Ireland
+2O,United Kingdom of Great Britain and Northern Ireland
+2P,United Kingdom of Great Britain and Northern Ireland
+2Q,United Kingdom of Great Britain and Northern Ireland
+2R,United Kingdom of Great Britain and Northern Ireland
+2S,United Kingdom of Great Britain and Northern Ireland
+2T,United Kingdom of Great Britain and Northern Ireland
+2U,United Kingdom of Great Britain and Northern Ireland
+2V,United Kingdom of Great Britain and Northern Ireland
+2W,United Kingdom of Great Britain and Northern Ireland
+2X,United Kingdom of Great Britain and Northern Ireland
+2Y,United Kingdom of Great Britain and Northern Ireland
+2Z,United Kingdom of Great Britain and Northern Ireland
+3A,Monaco (Principality of)
+3B,Mauritius (Republic of)
+3C,Equatorial Guinea (Republic of)
+3D,Eswatini (Kingdom of)
+3D,Fiji (Republic of)
+3E,Panama (Republic of)
+3F,Panama (Republic of)
+3G,Chile
+3H,China (People's Republic of)
+3I,China (People's Republic of)
+3J,China (People's Republic of)
+3K,China (People's Republic of)
+3L,China (People's Republic of)
+3M,China (People's Republic of)
+3N,China (People's Republic of)
+3O,China (People's Republic of)
+3P,China (People's Republic of)
+3Q,China (People's Republic of)
+3R,China (People's Republic of)
+3S,China (People's Republic of)
+3T,China (People's Republic of)
+3U,China (People's Republic of)
+3V,Tunisia
+3W,Viet Nam (Socialist Republic of)
+3X,Guinea (Republic of)
+3Y,Norway
+3Z,Poland (Republic of)
+4A,Mexico
+4B,Mexico
+4C,Mexico
+4D,Philippines (Republic of the)
+4E,Philippines (Republic of the)
+4F,Philippines (Republic of the)
+4G,Philippines (Republic of the)
+4H,Philippines (Republic of the)
+4I,Philippines (Republic of the)
+4J,Azerbaijan (Republic of)
+4K,Azerbaijan (Republic of)
+4L,Georgia
+4M,Venezuela (Bolivarian Republic of)
+4O,Montenegro
+4P,Sri Lanka (Democratic Socialist Republic of)
+4Q,Sri Lanka (Democratic Socialist Republic of)
+4R,Sri Lanka (Democratic Socialist Republic of)
+4S,Sri Lanka (Democratic Socialist Republic of)
+4T,Peru
+4U,United Nations
+4V,Haiti (Republic of)
+4W,Timor-Leste (Democratic Republic of)
+4X,Israel (State of)
+4Y,International Civil Aviation Organization
+4Z,Israel (State of)
+5A,Libya (State of)
+5B,Cyprus (Republic of)
+5C,Morocco (Kingdom of)
+5D,Morocco (Kingdom of)
+5E,Morocco (Kingdom of)
+5F,Morocco (Kingdom of)
+5G,Morocco (Kingdom of)
+5H,Tanzania (United Republic of)
+5I,Tanzania (United Republic of)
+5J,Colombia (Republic of)
+5K,Colombia (Republic of)
+5L,Liberia (Republic of)
+5M,Liberia (Republic of)
+5N,Nigeria (Federal Republic of)
+5O,Nigeria (Federal Republic of)
+5P,Denmark
+5Q,Denmark
+5R,Madagascar (Republic of)
+5S,Madagascar (Republic of)
+5T,Mauritania (Islamic Republic of)
+5U,Niger (Republic of the)
+5V,Togolese Republic
+5W,Samoa (Independent State of)
+5X,Uganda (Republic of)
+5Y,Kenya (Republic of)
+5Z,Kenya (Republic of)
+6A,Egypt (Arab Republic of)
+6B,Egypt (Arab Republic of)
+6C,Syrian Arab Republic
+6D,Mexico
+6E,Mexico
+6F,Mexico
+6G,Mexico
+6H,Mexico
+6I,Mexico
+6J,Mexico
+6K,Korea (Republic of)
+6L,Korea (Republic of)
+6M,Korea (Republic of)
+6N,Korea (Republic of)
+6O,Somalia (Federal Republic of)
+6P,Pakistan (Islamic Republic of)
+6Q,Pakistan (Islamic Republic of)
+6R,Pakistan (Islamic Republic of)
+6S,Pakistan (Islamic Republic of)
+6T,Sudan (Republic of the)
+6U,Sudan (Republic of the)
+6V,Senegal (Republic of)
+6W,Senegal (Republic of)
+6X,Madagascar (Republic of)
+6Y,Jamaica
+6Z,Liberia (Republic of)
+7A,Indonesia (Republic of)
+7B,Indonesia (Republic of)
+7C,Indonesia (Republic of)
+7D,Indonesia (Republic of)
+7E,Indonesia (Republic of)
+7F,Indonesia (Republic of)
+7G,Indonesia (Republic of)
+7H,Indonesia (Republic of)
+7I,Indonesia (Republic of)
+7J,Japan
+7K,Japan
+7L,Japan
+7M,Japan
+7N,Japan
+7O,Yemen (Republic of)
+7P,Lesotho (Kingdom of)
+7Q,Malawi
+7R,Algeria (People's Democratic Republic of)
+7S,Sweden
+7T,Algeria (People's Democratic Republic of)
+7U,Algeria (People's Democratic Republic of)
+7V,Algeria (People's Democratic Republic of)
+7W,Algeria (People's Democratic Republic of)
+7X,Algeria (People's Democratic Republic of)
+7Y,Algeria (People's Democratic Republic of)
+7Z,Saudi Arabia (Kingdom of)
+8A,Indonesia (Republic of)
+8B,Indonesia (Republic of)
+8C,Indonesia (Republic of)
+8D,Indonesia (Republic of)
+8E,Indonesia (Republic of)
+8F,Indonesia (Republic of)
+8G,Indonesia (Republic of)
+8H,Indonesia (Republic of)
+8I,Indonesia (Republic of)
+8J,Japan
+8K,Japan
+8L,Japan
+8M,Japan
+8N,Japan
+8O,Botswana (Republic of)
+8P,Barbados
+8Q,Maldives (Republic of)
+8R,Guyana
+8S,Sweden
+8T,India (Republic of)
+8U,India (Republic of)
+8V,India (Republic of)
+8W,India (Republic of)
+8X,India (Republic of)
+8Y,India (Republic of)
+8Z,Saudi Arabia (Kingdom of)
+9A,Croatia (Republic of)
+9B,Iran (Islamic Republic of)
+9C,Iran (Islamic Republic of)
+9D,Iran (Islamic Republic of)
+9E,Ethiopia (Federal Democratic Republic of)
+9F,Ethiopia (Federal Democratic Republic of)
+9G,Ghana
+9H,Malta
+9I,Zambia (Republic of)
+9J,Zambia (Republic of)
+9K,Kuwait (State of)
+9L,Sierra Leone
+9M,Malaysia
+9N,Nepal (Federal Democratic Republic of)
+9O,Democratic Republic of the Congo
+9P,Democratic Republic of the Congo
+9Q,Democratic Republic of the Congo
+9R,Democratic Republic of the Congo
+9S,Democratic Republic of the Congo
+9T,Democratic Republic of the Congo
+9U,Burundi (Republic of)
+9V,Singapore (Republic of)
+9W,Malaysia
+9X,Rwanda (Republic of)
+9Y,Trinidad and Tobago
+9Z,Trinidad and Tobago
+A2,Botswana (Republic of)
+A3,Tonga (Kingdom of)
+A4,Oman (Sultanate of)
+A5,Bhutan (Kingdom of)
+A6,United Arab Emirates
+A7,Qatar (State of)
+A8,Liberia (Republic of)
+A9,Bahrain (Kingdom of)
+AA,United States of America
+AB,United States of America
+AC,United States of America
+AD,United States of America
+AE,United States of America
+AF,United States of America
+AG,United States of America
+AH,United States of America
+AI,United States of America
+AJ,United States of America
+AK,United States of America
+AL,United States of America
+AM,Spain
+AN,Spain
+AO,Spain
+AP,Pakistan (Islamic Republic of)
+AQ,Pakistan (Islamic Republic of)
+AR,Pakistan (Islamic Republic of)
+AS,Pakistan (Islamic Republic of)
+AT,India (Republic of)
+AU,India (Republic of)
+AV,India (Republic of)
+AW,India (Republic of)
+AX,Australia
+AY,Argentine Republic
+AZ,Argentine Republic
+BA,China (People's Republic of)
+BB,China (People's Republic of)
+BC,China (People's Republic of)
+BD,China (People's Republic of)
+BE,China (People's Republic of)
+BF,China (People's Republic of)
+BG,China (People's Republic of)
+BH,China (People's Republic of)
+BI,China (People's Republic of)
+BJ,China (People's Republic of)
+BK,China (People's Republic of)
+BL,China (People's Republic of)
+BM,China (People's Republic of)
+BN,China (People's Republic of)
+BO,China (People's Republic of)
+BP,China (People's Republic of)
+BQ,China (People's Republic of)
+BR,China (People's Republic of)
+BS,China (People's Republic of)
+BT,China (People's Republic of)
+BU,China (People's Republic of)
+BV,China (People's Republic of)
+BW,China (People's Republic of)
+BX,China (People's Republic of)
+BY,China (People's Republic of)
+BZ,China (People's Republic of)
+C2,Nauru (Republic of)
+C3,Andorra (Principality of)
+C4,Cyprus (Republic of)
+C5,Gambia (Republic of the)
+C6,Bahamas (Commonwealth of the)
+C7,World Meteorological Organization
+C8,Mozambique (Republic of)
+C9,Mozambique (Republic of)
+CA,Chile
+CB,Chile
+CC,Chile
+CD,Chile
+CE,Chile
+CF,Canada
+CG,Canada
+CH,Canada
+CI,Canada
+CJ,Canada
+CK,Canada
+CL,Cuba
+CM,Cuba
+CN,Morocco (Kingdom of)
+CO,Cuba
+CP,Bolivia (Plurinational State of)
+CQ,Portugal
+CR,Portugal
+CS,Portugal
+CT,Portugal
+CU,Portugal
+CV,Uruguay (Eastern Republic of)
+CW,Uruguay (Eastern Republic of)
+CX,Uruguay (Eastern Republic of)
+CY,Canada
+CZ,Canada
+D2,Angola (Republic of)
+D3,Angola (Republic of)
+D4,Cabo Verde (Republic of)
+D5,Liberia (Republic of)
+D6,Comoros (Union of the)
+D7,Korea (Republic of)
+D8,Korea (Republic of)
+D9,Korea (Republic of)
+DA,Germany (Federal Republic of)
+DB,Germany (Federal Republic of)
+DC,Germany (Federal Republic of)
+DD,Germany (Federal Republic of)
+DE,Germany (Federal Republic of)
+DF,Germany (Federal Republic of)
+DG,Germany (Federal Republic of)
+DH,Germany (Federal Republic of)
+DI,Germany (Federal Republic of)
+DJ,Germany (Federal Republic of)
+DK,Germany (Federal Republic of)
+DL,Germany (Federal Republic of)
+DM,Germany (Federal Republic of)
+DN,Germany (Federal Republic of)
+DO,Germany (Federal Republic of)
+DP,Germany (Federal Republic of)
+DQ,Germany (Federal Republic of)
+DR,Germany (Federal Republic of)
+DS,Korea (Republic of)
+DT,Korea (Republic of)
+DU,Philippines (Republic of the)
+DV,Philippines (Republic of the)
+DW,Philippines (Republic of the)
+DX,Philippines (Republic of the)
+DY,Philippines (Republic of the)
+DZ,Philippines (Republic of the)
+E2,Thailand
+E3,Eritrea
+E4,"State of Palestine (In accordance with Resolution 99 Rev. Dubai, 2018)"
+E5,New Zealand - Cook Islands
+E6,New Zealand - Niue
+E7,Bosnia and Herzegovina
+EA,Spain
+EB,Spain
+EC,Spain
+ED,Spain
+EE,Spain
+EF,Spain
+EG,Spain
+EH,Spain
+EI,Ireland
+EJ,Ireland
+EK,Armenia (Republic of)
+EL,Liberia (Republic of)
+EM,Ukraine
+EN,Ukraine
+EO,Ukraine
+EP,Iran (Islamic Republic of)
+EQ,Iran (Islamic Republic of)
+ER,Moldova (Republic of)
+ES,Estonia (Republic of)
+ET,Ethiopia (Federal Democratic Republic of)
+EU,Belarus (Republic of)
+EV,Belarus (Republic of)
+EW,Belarus (Republic of)
+EX,Kyrgyz Republic
+EY,Tajikistan (Republic of)
+EZ,Turkmenistan
+FA,France
+FB,France
+FC,France
+FD,France
+FE,France
+FF,France
+FG,France
+FH,France
+FI,France
+FJ,France
+FK,France
+FL,France
+FM,France
+FN,France
+FO,France
+FP,France
+FQ,France
+FR,France
+FS,France
+FT,France
+FU,France
+FV,France
+FW,France
+FX,France
+FY,France
+FZ,France
+GA,United Kingdom of Great Britain and Northern Ireland
+GB,United Kingdom of Great Britain and Northern Ireland
+GC,United Kingdom of Great Britain and Northern Ireland
+GD,United Kingdom of Great Britain and Northern Ireland
+GE,United Kingdom of Great Britain and Northern Ireland
+GF,United Kingdom of Great Britain and Northern Ireland
+GG,United Kingdom of Great Britain and Northern Ireland
+GH,United Kingdom of Great Britain and Northern Ireland
+GI,United Kingdom of Great Britain and Northern Ireland
+GJ,United Kingdom of Great Britain and Northern Ireland
+GK,United Kingdom of Great Britain and Northern Ireland
+GL,United Kingdom of Great Britain and Northern Ireland
+GM,United Kingdom of Great Britain and Northern Ireland
+GN,United Kingdom of Great Britain and Northern Ireland
+GO,United Kingdom of Great Britain and Northern Ireland
+GP,United Kingdom of Great Britain and Northern Ireland
+GQ,United Kingdom of Great Britain and Northern Ireland
+GR,United Kingdom of Great Britain and Northern Ireland
+GS,United Kingdom of Great Britain and Northern Ireland
+GT,United Kingdom of Great Britain and Northern Ireland
+GU,United Kingdom of Great Britain and Northern Ireland
+GV,United Kingdom of Great Britain and Northern Ireland
+GW,United Kingdom of Great Britain and Northern Ireland
+GX,United Kingdom of Great Britain and Northern Ireland
+GY,United Kingdom of Great Britain and Northern Ireland
+GZ,United Kingdom of Great Britain and Northern Ireland
+H2,Cyprus (Republic of)
+H3,Panama (Republic of)
+H4,Solomon Islands
+H6,Nicaragua
+H7,Nicaragua
+H8,Panama (Republic of)
+H9,Panama (Republic of)
+HA,Hungary
+HB,Switzerland (Confederation of)
+HC,Ecuador
+HD,Ecuador
+HE,Switzerland (Confederation of)
+HF,Poland (Republic of)
+HG,Hungary
+HH,Haiti (Republic of)
+HI,Dominican Republic
+HJ,Colombia (Republic of)
+HK,Colombia (Republic of)
+HL,Korea (Republic of)
+HM,Democratic People's Republic of Korea
+HN,Iraq (Republic of)
+HO,Panama (Republic of)
+HP,Panama (Republic of)
+HQ,Honduras (Republic of)
+HR,Honduras (Republic of)
+HS,Thailand
+HT,Nicaragua
+HU,El Salvador (Republic of)
+HV,Vatican City State
+HW,France
+HX,France
+HY,France
+HZ,Saudi Arabia (Kingdom of)
+IA,Italy
+IB,Italy
+IC,Italy
+ID,Italy
+IE,Italy
+IF,Italy
+IG,Italy
+IH,Italy
+II,Italy
+IJ,Italy
+IK,Italy
+IL,Italy
+IM,Italy
+IN,Italy
+IO,Italy
+IP,Italy
+IQ,Italy
+IR,Italy
+IS,Italy
+IT,Italy
+IU,Italy
+IV,Italy
+IW,Italy
+IX,Italy
+IY,Italy
+IZ,Italy
+J2,Djibouti (Republic of)
+J3,Grenada
+J4,Greece
+J5,Guinea-Bissau (Republic of)
+J6,Saint Lucia
+J7,Dominica (Commonwealth of)
+J8,Saint Vincent and the Grenadines
+JA,Japan
+JB,Japan
+JC,Japan
+JD,Japan
+JE,Japan
+JF,Japan
+JG,Japan
+JH,Japan
+JI,Japan
+JJ,Japan
+JK,Japan
+JL,Japan
+JM,Japan
+JN,Japan
+JO,Japan
+JP,Japan
+JQ,Japan
+JR,Japan
+JS,Japan
+JT,Mongolia
+JU,Mongolia
+JV,Mongolia
+JW,Norway
+JX,Norway
+JY,Jordan (Hashemite Kingdom of)
+JZ,Indonesia (Republic of)
+KA,United States of America
+KB,United States of America
+KC,United States of America
+KD,United States of America
+KE,United States of America
+KF,United States of America
+KG,United States of America
+KH,United States of America
+KI,United States of America
+KJ,United States of America
+KK,United States of America
+KL,United States of America
+KM,United States of America
+KN,United States of America
+KO,United States of America
+KP,United States of America
+KQ,United States of America
+KR,United States of America
+KS,United States of America
+KT,United States of America
+KU,United States of America
+KV,United States of America
+KW,United States of America
+KX,United States of America
+KY,United States of America
+KZ,United States of America
+L2,Argentine Republic
+L3,Argentine Republic
+L4,Argentine Republic
+L5,Argentine Republic
+L6,Argentine Republic
+L7,Argentine Republic
+L8,Argentine Republic
+L9,Argentine Republic
+LA,Norway
+LB,Norway
+LC,Norway
+LD,Norway
+LE,Norway
+LF,Norway
+LG,Norway
+LH,Norway
+LI,Norway
+LJ,Norway
+LK,Norway
+LL,Norway
+LM,Norway
+LN,Norway
+LO,Argentine Republic
+LP,Argentine Republic
+LQ,Argentine Republic
+LR,Argentine Republic
+LS,Argentine Republic
+LT,Argentine Republic
+LU,Argentine Republic
+LV,Argentine Republic
+LW,Argentine Republic
+LX,Luxembourg
+LY,Lithuania (Republic of)
+LZ,Bulgaria (Republic of)
+MA,United Kingdom of Great Britain and Northern Ireland
+MB,United Kingdom of Great Britain and Northern Ireland
+MC,United Kingdom of Great Britain and Northern Ireland
+MD,United Kingdom of Great Britain and Northern Ireland
+ME,United Kingdom of Great Britain and Northern Ireland
+MF,United Kingdom of Great Britain and Northern Ireland
+MG,United Kingdom of Great Britain and Northern Ireland
+MH,United Kingdom of Great Britain and Northern Ireland
+MI,United Kingdom of Great Britain and Northern Ireland
+MJ,United Kingdom of Great Britain and Northern Ireland
+MK,United Kingdom of Great Britain and Northern Ireland
+ML,United Kingdom of Great Britain and Northern Ireland
+MM,United Kingdom of Great Britain and Northern Ireland
+MN,United Kingdom of Great Britain and Northern Ireland
+MO,United Kingdom of Great Britain and Northern Ireland
+MP,United Kingdom of Great Britain and Northern Ireland
+MQ,United Kingdom of Great Britain and Northern Ireland
+MR,United Kingdom of Great Britain and Northern Ireland
+MS,United Kingdom of Great Britain and Northern Ireland
+MT,United Kingdom of Great Britain and Northern Ireland
+MU,United Kingdom of Great Britain and Northern Ireland
+MV,United Kingdom of Great Britain and Northern Ireland
+MW,United Kingdom of Great Britain and Northern Ireland
+MX,United Kingdom of Great Britain and Northern Ireland
+MY,United Kingdom of Great Britain and Northern Ireland
+MZ,United Kingdom of Great Britain and Northern Ireland
+NA,United States of America
+NB,United States of America
+NC,United States of America
+ND,United States of America
+NE,United States of America
+NF,United States of America
+NG,United States of America
+NH,United States of America
+NI,United States of America
+NJ,United States of America
+NK,United States of America
+NL,United States of America
+NM,United States of America
+NN,United States of America
+NO,United States of America
+NP,United States of America
+NQ,United States of America
+NR,United States of America
+NS,United States of America
+NT,United States of America
+NU,United States of America
+NV,United States of America
+NW,United States of America
+NX,United States of America
+NY,United States of America
+NZ,United States of America
+OA,Peru
+OB,Peru
+OC,Peru
+OD,Lebanon
+OE,Austria
+OF,Finland
+OG,Finland
+OH,Finland
+OI,Finland
+OJ,Finland
+OK,Czech Republic
+OL,Czech Republic
+OM,Slovak Republic
+ON,Belgium
+OO,Belgium
+OP,Belgium
+OQ,Belgium
+OR,Belgium
+OS,Belgium
+OT,Belgium
+OU,Denmark
+OV,Denmark
+OW,Denmark
+OX,Denmark
+OY,Denmark
+OZ,Denmark
+P2,Papua New Guinea
+P3,Cyprus (Republic of)
+P4,Netherlands (Kingdom of the) - Aruba
+P5,Democratic People's Republic of Korea
+P6,Democratic People's Republic of Korea
+P7,Democratic People's Republic of Korea
+P8,Democratic People's Republic of Korea
+P9,Democratic People's Republic of Korea
+PA,Netherlands (Kingdom of the)
+PB,Netherlands (Kingdom of the)
+PC,Netherlands (Kingdom of the)
+PD,Netherlands (Kingdom of the)
+PE,Netherlands (Kingdom of the)
+PF,Netherlands (Kingdom of the)
+PG,Netherlands (Kingdom of the)
+PH,Netherlands (Kingdom of the)
+PI,Netherlands (Kingdom of the)
+PJ,"Netherlands (Kingdom of the) - Bonaire, Sint Eustatius and Saba"
+PJ,Netherlands (Kingdom of the) - Curaçao
+PJ,Netherlands (Kingdom of the) - Sint Maarten (Dutch part)
+PK,Indonesia (Republic of)
+PL,Indonesia (Republic of)
+PM,Indonesia (Republic of)
+PN,Indonesia (Republic of)
+PO,Indonesia (Republic of)
+PP,Brazil (Federative Republic of)
+PQ,Brazil (Federative Republic of)
+PR,Brazil (Federative Republic of)
+PS,Brazil (Federative Republic of)
+PT,Brazil (Federative Republic of)
+PU,Brazil (Federative Republic of)
+PV,Brazil (Federative Republic of)
+PW,Brazil (Federative Republic of)
+PX,Brazil (Federative Republic of)
+PY,Brazil (Federative Republic of)
+PZ,Suriname (Republic of)
+RA,Russian Federation
+RB,Russian Federation
+RC,Russian Federation
+RD,Russian Federation
+RE,Russian Federation
+RF,Russian Federation
+RG,Russian Federation
+RH,Russian Federation
+RI,Russian Federation
+RJ,Russian Federation
+RK,Russian Federation
+RL,Russian Federation
+RM,Russian Federation
+RN,Russian Federation
+RO,Russian Federation
+RP,Russian Federation
+RQ,Russian Federation
+RR,Russian Federation
+RS,Russian Federation
+RT,Russian Federation
+RU,Russian Federation
+RV,Russian Federation
+RW,Russian Federation
+RX,Russian Federation
+RY,Russian Federation
+RZ,Russian Federation
+S2,Bangladesh (People's Republic of)
+S3,Bangladesh (People's Republic of)
+S5,Slovenia (Republic of)
+S6,Singapore (Republic of)
+S7,Seychelles (Republic of)
+S8,South Africa (Republic of)
+S9,Sao Tome and Principe (Democratic Republic of)
+SA,Sweden
+SB,Sweden
+SC,Sweden
+SD,Sweden
+SE,Sweden
+SF,Sweden
+SG,Sweden
+SH,Sweden
+SI,Sweden
+SJ,Sweden
+SK,Sweden
+SL,Sweden
+SM,Sweden
+SN,Poland (Republic of)
+SO,Poland (Republic of)
+SP,Poland (Republic of)
+SQ,Poland (Republic of)
+SR,Poland (Republic of)
+SS,Egypt (Arab Republic of)
+SS,Sudan (Republic of the)
+ST,Sudan (Republic of the)
+SU,Egypt (Arab Republic of)
+SV,Greece
+SW,Greece
+SX,Greece
+SY,Greece
+SZ,Greece
+T2,Tuvalu
+T3,Kiribati (Republic of)
+T4,Cuba
+T5,Somalia (Federal Republic of)
+T6,Afghanistan
+T7,San Marino (Republic of)
+T8,Palau (Republic of)
+TA,Republic of Türkiye
+TB,Republic of Türkiye
+TC,Republic of Türkiye
+TD,Guatemala (Republic of)
+TE,Costa Rica
+TF,Iceland
+TG,Guatemala (Republic of)
+TH,France
+TI,Costa Rica
+TJ,Cameroon (Republic of)
+TK,France
+TL,Central African Republic
+TM,France
+TN,Congo (Republic of the)
+TO,France
+TP,France
+TQ,France
+TR,Gabonese Republic
+TS,Tunisia
+TT,Chad (Republic of)
+TU,Côte d'Ivoire (Republic of)
+TV,France
+TW,France
+TX,France
+TY,Benin (Republic of)
+TZ,Mali (Republic of)
+UA,Russian Federation
+UB,Russian Federation
+UC,Russian Federation
+UD,Russian Federation
+UE,Russian Federation
+UF,Russian Federation
+UG,Russian Federation
+UH,Russian Federation
+UI,Russian Federation
+UJ,Uzbekistan (Republic of)
+UK,Uzbekistan (Republic of)
+UL,Uzbekistan (Republic of)
+UM,Uzbekistan (Republic of)
+UN,Kazakhstan (Republic of)
+UO,Kazakhstan (Republic of)
+UP,Kazakhstan (Republic of)
+UQ,Kazakhstan (Republic of)
+UR,Ukraine
+US,Ukraine
+UT,Ukraine
+UU,Ukraine
+UV,Ukraine
+UW,Ukraine
+UX,Ukraine
+UY,Ukraine
+UZ,Ukraine
+V2,Antigua and Barbuda
+V3,Belize
+V4,Saint Kitts and Nevis (Federation of)
+V5,Namibia (Republic of)
+V6,Micronesia (Federated States of)
+V7,Marshall Islands (Republic of the)
+V8,Brunei Darussalam
+VA,Canada
+VB,Canada
+VC,Canada
+VD,Canada
+VE,Canada
+VF,Canada
+VG,Canada
+VH,Australia
+VI,Australia
+VJ,Australia
+VK,Australia
+VL,Australia
+VM,Australia
+VN,Australia
+VO,Canada
+VP,United Kingdom of Great Britain and Northern Ireland
+VQ,United Kingdom of Great Britain and Northern Ireland
+VR,China (People's Republic of) - Hong Kong
+VS,United Kingdom of Great Britain and Northern Ireland
+VT,India (Republic of)
+VU,India (Republic of)
+VV,India (Republic of)
+VW,India (Republic of)
+VX,Canada
+VY,Canada
+VZ,Australia
+WA,United States of America
+WB,United States of America
+WC,United States of America
+WD,United States of America
+WE,United States of America
+WF,United States of America
+WG,United States of America
+WH,United States of America
+WI,United States of America
+WJ,United States of America
+WK,United States of America
+WL,United States of America
+WM,United States of America
+WN,United States of America
+WO,United States of America
+WP,United States of America
+WQ,United States of America
+WR,United States of America
+WS,United States of America
+WT,United States of America
+WU,United States of America
+WV,United States of America
+WW,United States of America
+WX,United States of America
+WY,United States of America
+WZ,United States of America
+XA,Mexico
+XB,Mexico
+XC,Mexico
+XD,Mexico
+XE,Mexico
+XF,Mexico
+XG,Mexico
+XH,Mexico
+XI,Mexico
+XJ,Canada
+XK,Canada
+XL,Canada
+XM,Canada
+XN,Canada
+XO,Canada
+XP,Denmark
+XQ,Chile
+XR,Chile
+XS,China (People's Republic of)
+XT,Burkina Faso
+XU,Cambodia (Kingdom of)
+XV,Viet Nam (Socialist Republic of)
+XW,Lao People's Democratic Republic
+XX,China (People's Republic of) - Macao
+XY,Myanmar (Union of)
+XZ,Myanmar (Union of)
+Y2,Germany (Federal Republic of)
+Y3,Germany (Federal Republic of)
+Y4,Germany (Federal Republic of)
+Y5,Germany (Federal Republic of)
+Y6,Germany (Federal Republic of)
+Y7,Germany (Federal Republic of)
+Y8,Germany (Federal Republic of)
+Y9,Germany (Federal Republic of)
+YA,Afghanistan
+YB,Indonesia (Republic of)
+YC,Indonesia (Republic of)
+YD,Indonesia (Republic of)
+YE,Indonesia (Republic of)
+YF,Indonesia (Republic of)
+YG,Indonesia (Republic of)
+YH,Indonesia (Republic of)
+YI,Iraq (Republic of)
+YJ,Vanuatu (Republic of)
+YK,Syrian Arab Republic
+YL,Latvia (Republic of)
+YM,Republic of Türkiye
+YN,Nicaragua
+YO,Romania
+YP,Romania
+YQ,Romania
+YR,Romania
+YS,El Salvador (Republic of)
+YT,Serbia (Republic of)
+YU,Serbia (Republic of)
+YV,Venezuela (Bolivarian Republic of)
+YW,Venezuela (Bolivarian Republic of)
+YX,Venezuela (Bolivarian Republic of)
+YY,Venezuela (Bolivarian Republic of)
+Z2,Zimbabwe (Republic of)
+Z3,North Macedonia (Republic of)
+Z8,South Sudan (Republic of)
+ZA,Albania (Republic of)
+ZB,United Kingdom of Great Britain and Northern Ireland
+ZC,United Kingdom of Great Britain and Northern Ireland
+ZD,United Kingdom of Great Britain and Northern Ireland
+ZE,United Kingdom of Great Britain and Northern Ireland
+ZF,United Kingdom of Great Britain and Northern Ireland
+ZG,United Kingdom of Great Britain and Northern Ireland
+ZH,United Kingdom of Great Britain and Northern Ireland
+ZI,United Kingdom of Great Britain and Northern Ireland
+ZJ,United Kingdom of Great Britain and Northern Ireland
+ZK,New Zealand
+ZL,New Zealand
+ZM,New Zealand
+ZN,United Kingdom of Great Britain and Northern Ireland
+ZO,United Kingdom of Great Britain and Northern Ireland
+ZP,Paraguay (Republic of)
+ZQ,United Kingdom of Great Britain and Northern Ireland
+ZR,South Africa (Republic of)
+ZS,South Africa (Republic of)
+ZT,South Africa (Republic of)
+ZU,South Africa (Republic of)
+ZV,Brazil (Federative Republic of)
+ZW,Brazil (Federative Republic of)
+ZX,Brazil (Federative Republic of)
+ZY,Brazil (Federative Republic of)
+ZZ,Brazil (Federative Republic of)
