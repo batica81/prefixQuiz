@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "copyfiles -u 1 src/* dist"
+    "build": "copyfiles -u 1 src/* dist",
+    "upload": "scp -P6622 -r ./dist/* root@cinamontest.duckdns.org:/var/www/prefixQuiz"
   },
   "author": "",
   "license": "UNLICENSED",
