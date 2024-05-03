@@ -112,7 +112,6 @@ function initPrefixes() {
     shuffle_children(prefixOptions)
 }
 
-
 function createDivWithTxtAndData(textContent) {
     // Create a new div element
     let div = document.createElement("div");
@@ -159,7 +158,4 @@ window.onload = (event) => {
 
     currentPrefix.addEventListener('click', initCountries)
     currentCountry.addEventListener('click', initPrefixes)
-
-    initPrefixes()
-    initCountries()
 };
