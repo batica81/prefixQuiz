@@ -5,6 +5,8 @@ const allPrefixes = mergeArrays(prefixList);
 let randomCountry =  getRandomKey(prefixList)
 let countryPrefix = getSingleOrRandom(prefixList[randomCountry])
 
+let showCorrectStatus = false;
+
 function getRandomKey(obj) {
     const keys = Object.keys(obj);
     const randomIndex = Math.floor(Math.random() * keys.length);
@@ -79,6 +81,9 @@ function initCountries() {
     // adding correct country to the list
     let tmpDiv = createDivWithTxtAndData(nameCleanup(randomCountry))
     tmpDiv.setAttribute("data-param", "correctAnswer");
+    if (showCorrectStatus === true) {
+        tmpDiv.classList.add('correctAnswer')
+    }
     tmpDiv.addEventListener('click', checkAnswer)
     countryOptions.appendChild(tmpDiv)
 
@@ -106,6 +111,9 @@ function initPrefixes() {
     let correctPrefix =  getSingleOrRandom(prefixList[randomCountry])
     let tmpDiv = createDivWithTxtAndData(correctPrefix)
     tmpDiv.setAttribute("data-param", "correctAnswer");
+    if (showCorrectStatus === true) {
+        tmpDiv.classList.add('correctAnswer')
+    }
     tmpDiv.addEventListener('click', checkAnswer)
     prefixOptions.appendChild(tmpDiv)
 
@@ -140,6 +148,18 @@ function shuffle_children(element) {
     }
 }
 
+function markCorrect(showCorrectStatusParam) {
+    if (showCorrectStatusParam === true) {
+        document.querySelectorAll('div[data-param="correctAnswer"]').forEach( function (c) {
+            c.classList.add('correctAnswer');
+        })
+    } else if (showCorrectStatusParam === false){
+        document.querySelectorAll('div[data-param="correctAnswer"]').forEach( function (c) {
+            c.classList.remove('correctAnswer');
+        })
+    }
+}
+
 window.onload = (event) => {
     let gameWrapper = document.getElementsByClassName('gameWrapper')
     let modeChooserButton = document.getElementsByClassName('modeChooserButton')[0];
@@ -147,7 +167,25 @@ window.onload = (event) => {
     let currentPrefix = document.getElementsByClassName('currentPrefix')[0];
     let currentCountry = document.getElementsByClassName('currentCountry')[0];
 
+    let darkModeButton = document.querySelector('#darkMode');
+    let showCorrect = document.querySelector('#showCorrect');
+
+    const darkMode = new Darkmode({
+        backgroundColor: 'darkgray'
+    });
+
+    showCorrect.addEventListener('change', function () {
+        showCorrectStatus = !showCorrectStatus;
+        markCorrect(showCorrectStatus);
+    });
+
+
     let buttonText = 'Guess Prefix'
+
+    darkModeButton.addEventListener('click', function () {
+        darkMode.toggle();
+    });
+
 
     modeChooserButton.addEventListener('click', function (){
         let currentText = this.innerText;

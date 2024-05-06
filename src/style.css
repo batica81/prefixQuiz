@@ -34,10 +34,12 @@ body {
 
 .correctAnswer {
     background: green;
+    isolation: isolate;
 }
 
 .wrongAnswer{
     background: darkred;
+    isolation: isolate;
 }
 
 .wrapper {
@@ -57,4 +59,12 @@ header {
 
 .gameWrapper {
     display: inline-block;
+}
+
+.darkmode-layer, .darkmode-toggle {
+    bottom: unset !important;
+}
+
+body > button, .darkmode-toggle--white {
+    display: none !important;
 }
