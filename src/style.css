@@ -1,9 +1,10 @@
 body {
     background: #c2dcec;
+    font-family: Verdana, sans-serif;
 }
 
 .hidden {
-    display: none!important;
+    display: none !important;
 }
 
 .questionWrapper {
@@ -18,6 +19,16 @@ body {
     font-size: 32px;
     user-select: none;
     margin-bottom: 30px;
+    text-decoration: none;
+    /*border: none;*/
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adjust shadow as needed */
+    transition: all 0.3s ease; /* Smooth transition on hover */
+    isolation: isolate !important;
+}
+
+.questionWrapper:hover {
+    cursor: pointer;
 }
 
 .answerWrapper {
@@ -31,15 +42,14 @@ body {
     user-select: none;
 }
 
-
 .correctAnswer {
-    background: green;
-    isolation: isolate;
+    background: green !important;
+    isolation: isolate !important;
 }
 
 .wrongAnswer{
-    background: darkred;
-    isolation: isolate;
+    background: darkred !important;
+    isolation: isolate !important;
 }
 
 .wrapper {
@@ -48,9 +58,11 @@ body {
     font-size: 20px;
 }
 
-.modeChooserButton {
+.modeChooserButton, .darkModeButton {
     font-size: 20px;
     margin: 20px;
+    font-family: Verdana, sans-serif;
+
 }
 
 header {
@@ -67,4 +79,24 @@ header {
 
 body > button, .darkmode-toggle--white {
     display: none !important;
+}
+
+.clickable-div {
+    padding: 10px 20px;
+    background-color: #00bcd4; /* Green */
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adjust shadow as needed */
+    transition: all 0.3s ease; /* Smooth transition on hover */
+    isolation: isolate !important;
+}
+
+.clickable-div:hover {
+    background-color: #1e77a3; /* Darker green on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adjusted shadow on hover */
+    cursor: pointer;
+    isolation: isolate !important;
 }

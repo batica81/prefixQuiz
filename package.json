@@ -8,7 +8,7 @@
     "build": "copyfiles -u 1 src/* dist",
     "upload": "scp -P6622 -r ./dist/* root@cinamontest.duckdns.org:/var/www/prefixQuiz"
   },
-  "author": "",
+  "author": "Vojislav Ristivojevic YU4HAK",
   "license": "UNLICENSED",
   "dependencies": {
     "copyfiles": "^2.4.1"

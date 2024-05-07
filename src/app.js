@@ -69,20 +69,22 @@ function initCountries() {
     let countryPrefix = getSingleOrRandom(prefixList[randomCountry])
     this.innerText =  countryPrefix;
 
-    // create an array of countries excluding the correct one
-    let randomCountries = getRandomMembers(allCountries, 3, randomCountry)
 
-    randomCountries.forEach(rp => {
-        let tmpDiv = createDivWithTxtAndData(nameCleanup(rp))
-        tmpDiv.addEventListener('click', checkAnswer)
-        countryOptions.appendChild(tmpDiv)
-    })
 
     // adding correct country to the list
     let tmpDiv = createDivWithTxtAndData(nameCleanup(randomCountry))
     tmpDiv.setAttribute("data-param", "correctAnswer");
     if (showCorrectStatus === true) {
         tmpDiv.classList.add('correctAnswer')
+    } else {
+        // create an array of countries excluding the correct one
+        let randomCountries = getRandomMembers(allCountries, 3, randomCountry)
+
+        randomCountries.forEach(rp => {
+            let tmpDiv = createDivWithTxtAndData(nameCleanup(rp))
+            tmpDiv.addEventListener('click', checkAnswer)
+            countryOptions.appendChild(tmpDiv)
+        })
     }
     tmpDiv.addEventListener('click', checkAnswer)
     countryOptions.appendChild(tmpDiv)
@@ -98,14 +100,6 @@ function initPrefixes() {
     let randomCountry =  getRandomKey(prefixList)
     this.innerText =  nameCleanup(randomCountry)
 
-    // create an array of prefixes excluding the correct one
-    let randomPrefixes = getRandomMembers(allPrefixes, 3, countryPrefix)
-
-    randomPrefixes.forEach(rp => {
-        let tmpDiv = createDivWithTxtAndData(rp)
-        tmpDiv.addEventListener('click', checkAnswer)
-        prefixOptions.appendChild(tmpDiv)
-    })
 
     // adding correct prefix to the list
     let correctPrefix =  getSingleOrRandom(prefixList[randomCountry])
@@ -113,6 +107,15 @@ function initPrefixes() {
     tmpDiv.setAttribute("data-param", "correctAnswer");
     if (showCorrectStatus === true) {
         tmpDiv.classList.add('correctAnswer')
+    } else {
+        // create an array of prefixes excluding the correct one
+        let randomPrefixes = getRandomMembers(allPrefixes, 3, countryPrefix)
+
+        randomPrefixes.forEach(rp => {
+            let tmpDiv = createDivWithTxtAndData(rp)
+            tmpDiv.addEventListener('click', checkAnswer)
+            prefixOptions.appendChild(tmpDiv)
+        })
     }
     tmpDiv.addEventListener('click', checkAnswer)
     prefixOptions.appendChild(tmpDiv)
@@ -152,10 +155,14 @@ function markCorrect(showCorrectStatusParam) {
     if (showCorrectStatusParam === true) {
         document.querySelectorAll('div[data-param="correctAnswer"]').forEach( function (c) {
             c.classList.add('correctAnswer');
+
+            // classList.add('hidden')
         })
     } else if (showCorrectStatusParam === false){
         document.querySelectorAll('div[data-param="correctAnswer"]').forEach( function (c) {
             c.classList.remove('correctAnswer');
+
+            // c.classList.remove('hidden');
         })
     }
 }

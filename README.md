@@ -8,7 +8,5 @@ The list was taken from: https://www.itu.int/en/ITU-R/terrestrial/fmd/Pages/call
 
 TODO:
 - Add points
-- Make installable - PWA
-- Add design
 - Add flags
 - Add weights for actual occurrences of prefixes

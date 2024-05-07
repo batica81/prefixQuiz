@@ -1,0 +1,16 @@
+{
+  "name": "Prefix Quiz",
+  "short_name": "Prefix Quiz",
+  "description": "Progressive Web App that quizzes your prefix knowledge.",
+  "icons": [
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#B12A34",
+  "background_color": "#B12A34"
+}
