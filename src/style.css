@@ -90,7 +90,7 @@ body > button, .darkmode-toggle--white {
     border: none;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adjust shadow as needed */
-    transition: all 0.3s ease; /* Smooth transition on hover */
+    transition: all 0.1s ease; /* Smooth transition on hover */
     isolation: isolate !important;
 }
 
