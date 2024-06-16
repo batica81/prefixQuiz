@@ -81,7 +81,7 @@ body > button, .darkmode-toggle--white {
     display: none !important;
 }
 
-.clickable-div {
+.clickable-div, #askedPrefix, #result {
     padding: 10px 20px;
     background-color: #00bcd4; /* Green */
     color: white;
@@ -99,4 +99,20 @@ body > button, .darkmode-toggle--white {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adjusted shadow on hover */
     cursor: pointer;
     isolation: isolate !important;
+}
+
+.lookupGameWrapper {
+    /*background-color: blue;*/
+}
+
+#twoLetterInput {
+    font-size: 32px;
+    max-width: 250px;
+    text-align: center;
+    margin: 10px;
+}
+
+#askedPrefix, #result {
+    margin: 10px;
+    font-size: 32px;
 }

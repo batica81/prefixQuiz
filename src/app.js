@@ -60,7 +60,6 @@ function nameCleanup(countryName) {
     return countryName.includes('(') ? countryName.split('(')[0].trim() : countryName
 }
 
-
 function initCountries() {
     let countryOptions = document.getElementsByClassName('countryOptions')[0];
     countryOptions.innerHTML = '';
@@ -91,7 +90,6 @@ function initCountries() {
 
     shuffle_children(countryOptions)
 }
-
 
 function initPrefixes() {
     let prefixOptions = document.getElementsByClassName('prefixOptions')[0];
@@ -167,6 +165,23 @@ function markCorrect(showCorrectStatusParam) {
     }
 }
 
+function findCountryByPrefix(prefixList, wantedPrefix) {
+    for (const country in prefixList) {
+        if (prefixList[country].indexOf(wantedPrefix.toUpperCase()) !== -1) {
+            return nameCleanup(country);
+        }
+    }
+}
+
+function updateResult() {
+    const input = document.getElementById('twoLetterInput').value;
+    if (input.length === 2) {
+        document.getElementById('result').textContent = findCountryByPrefix(prefixList,input);
+        document.getElementById('askedPrefix').textContent = input.toUpperCase();
+        document.getElementById('twoLetterInput').value = '';
+    }
+}
+
 window.onload = (event) => {
     let gameWrapper = document.getElementsByClassName('gameWrapper')
     let modeChooserButton = document.getElementsByClassName('modeChooserButton')[0];
@@ -177,6 +192,8 @@ window.onload = (event) => {
     let darkModeButton = document.querySelector('#darkMode');
     let showCorrect = document.querySelector('#showCorrect');
 
+    let twoLetterInput = document.querySelector('#twoLetterInput');
+
     const darkMode = new Darkmode({
         backgroundColor: 'darkgray'
     });
@@ -186,6 +203,9 @@ window.onload = (event) => {
         markCorrect(showCorrectStatus);
     });
 
+    twoLetterInput.addEventListener('input', function () {
+        updateResult();
+    });
 
     let buttonText = 'Guess Prefix'
 

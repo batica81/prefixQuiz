@@ -16,7 +16,7 @@
 
 <div class="wrapper">
 
-	<header>This is a game to help you learn <a href="https://www.itu.int/en/ITU-R/terrestrial/fmd/Pages/call_sign_series.aspx">country prefixes</a>. It has two modes, guess the country and guess the prefix.</header>
+	<header>This is a game to help you learn <a href="https://www.itu.int/en/ITU-R/terrestrial/fmd/Pages/call_sign_series.aspx">country prefixes</a>. It has three modes: guess the country, guess the prefix and prefix lookup.</header>
 
 	<div class="modeChooser">
 		<button class="modeChooserButton guessCountry">Guess Country</button>
@@ -33,6 +33,15 @@
 	<div class="gameWrapper countryGameWrapper hidden">
 		<div class="questionWrapper currentCountry">START</div>
 		<div class="prefixOptions"></div>
+	</div>
+
+	<div class="gameWrapper lookupGameWrapper hidden">
+		<div class="questionWrapper">
+			<label for="twoLetterInput">Enter prefix</label><br>
+			<input type="text" id="twoLetterInput" maxlength="2" placeholder="Enter two letters">
+		</div>
+		<div id="askedPrefix">prefix</div>
+		<div id="result">country</div>
 	</div>
 
 </div>
