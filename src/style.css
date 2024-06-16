@@ -60,13 +60,14 @@ body {
 
 .modeChooserButton, .darkModeButton {
     font-size: 20px;
-    margin: 20px;
+    margin: 10px;
     font-family: Verdana, sans-serif;
-
+    min-width: 175px;
 }
 
 header {
     font-size: 25px;
+    margin-bottom: 10px;
 }
 
 .gameWrapper {
@@ -110,9 +111,14 @@ body > button, .darkmode-toggle--white {
     max-width: 250px;
     text-align: center;
     margin: 10px;
+    padding: 5px;
 }
 
 #askedPrefix, #result {
     margin: 10px;
     font-size: 32px;
+}
+
+.showCorrectWrapper {
+    margin-bottom: 10px;
 }

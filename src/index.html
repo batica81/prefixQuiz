@@ -16,13 +16,19 @@
 
 <div class="wrapper">
 
-	<header>This is a game to help you learn <a href="https://www.itu.int/en/ITU-R/terrestrial/fmd/Pages/call_sign_series.aspx">country prefixes</a>. It has three modes: guess the country, guess the prefix and prefix lookup.</header>
+	<header>This is a game to help you learn <a href="https://www.itu.int/en/ITU-R/terrestrial/fmd/Pages/call_sign_series.aspx" target="_blank">country prefixes</a>. It has three modes: guess the country, guess the prefix and prefix lookup.</header>
 
 	<div class="modeChooser">
-		<button class="modeChooserButton guessCountry">Guess Country</button>
+		<button class="modeChooserButton guessCountryButton">Guess Country</button>
+		<button class="modeChooserButton guessPrefixButton">Guess Prefix</button>
+		<button class="modeChooserButton prefixLookupButton">Prefix Lookup</button>
+
 		<button class="darkMode darkModeButton" id="darkMode">Dark Mode</button>
-		<label for="showCorrect">Show Correct</label>
-		<input type="checkbox" name="showCorrect" id="showCorrect">
+
+		<div class="showCorrectWrapper">
+			<label class="showCorrectComponent" for="showCorrect">Show Correct</label>
+			<input class="showCorrectComponent" type="checkbox" name="showCorrect" id="showCorrect">
+		</div>
 	</div>
 
 	<div class="gameWrapper prefixGameWrapper">
