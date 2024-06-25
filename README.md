@@ -10,3 +10,4 @@ App is available for use or install at: https://prefixquiz.cinamontest.duckdns.o
 TODO:
 - Add points
 - Add weights for actual occurrences of prefixes
+- improve service worker

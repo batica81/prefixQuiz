@@ -9,6 +9,7 @@ const STATIC_CACHE_URLS = [
     "prefixList.js",
     "sc01.png",
     "sc02.png",
+    "service-worker.js",
     "style.css"
 ];
 
@@ -21,13 +22,27 @@ self.addEventListener("install", (event) => {
 
 self.addEventListener("activate", event => {
     console.log("Service Worker activating.");
+    event.waitUntil(
+        caches.keys().then(keys => Promise.all(
+            keys.map(key => {
+                if(!CACHE_NAME.includes(key)){
+                    return caches.delete(key);
+                }
+            })
+        ))
+    );
 });
 
 self.addEventListener("fetch", (event) => {
-    // Cache-First Strategy
     event.respondWith(
         caches
-            .match(event.request) // check if the request has already been cached
-            .then((cached) => cached || fetch(event.request)) // otherwise request network
+            .match(event.request)
+            .then(cached => cached
+                // network request if not in cache
+                || fetch(event.request).catch(() =>
+                    // fallback: return offline.html if fetch fails
+                    caches.match('offline.html')
+                )
+            )
     );
 });

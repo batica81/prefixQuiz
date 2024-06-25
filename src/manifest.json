@@ -1,6 +1,6 @@
 {
   "name": "Prefix Quiz",
-  "id": "https://prefixquiz.local/prefixquiz.local",
+  "id": "https://prefixquiz.cinamontest.duckdns.org",
   "short_name": "Prefix Quiz",
   "description": "Progressive Web App that quizzes your prefix knowledge.",
   "lang": "en",
@@ -24,7 +24,7 @@
       "form_factor": "wide"
     }
   ],
-  "start_url": "prefixquiz.local",
+  "start_url": "/",
   "scope": ".",
   "display": "standalone",
   "display_override": ["window-controls-overlay"],
