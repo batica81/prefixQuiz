@@ -1,7 +1,9 @@
 {
   "name": "Prefix Quiz",
+  "id": "https://prefixquiz.local/prefixquiz.local",
   "short_name": "Prefix Quiz",
   "description": "Progressive Web App that quizzes your prefix knowledge.",
+  "lang": "en",
   "icons": [
     {
       "src": "icon-512.png",
@@ -9,8 +11,23 @@
       "type": "image/png"
     }
   ],
-  "start_url": ".",
+  "screenshots": [
+    {
+      "src": "sc01.png",
+      "sizes": "819x513",
+      "type": "image/png"
+    },
+    {
+      "src": "sc02.png",
+      "sizes": "1464x787",
+      "type": "image/png",
+      "form_factor": "wide"
+    }
+  ],
+  "start_url": "prefixquiz.local",
+  "scope": ".",
   "display": "standalone",
+  "display_override": ["window-controls-overlay"],
   "theme_color": "#B12A34",
-  "background_color": "#2AB1A7"
+  "background_color": "#ffffff"
 }
