@@ -8,6 +8,12 @@ The list was taken from: https://www.itu.int/en/ITU-R/terrestrial/fmd/Pages/call
 App is available for use or install at: https://prefixquiz.cinamontest.duckdns.org/
 
 TODO:
+
+- Add more prefixes from DXCC list
+- Handle 2 and 3 letter prefixes
+- Add keyboard shortcuts (space and numbers)
+- Fix service worker
+
 - Add points
 - Add weights for actual occurrences of prefixes
-- improve service worker
+- Move to Cloudflare pages
