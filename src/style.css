@@ -8,11 +8,13 @@ body {
 }
 
 .questionWrapper {
+    /*overflow-wrap: break-word;*/
+    /*inline-size: 300px;*/
     background: aliceblue;
     border: 1px black solid;
     padding: 5px;
     margin: 10px;
-    max-width: 400px;
+    /*max-width: 400px;*/
     min-width: 280px;
     font-weight: 700;
     text-align: center;
@@ -32,10 +34,12 @@ body {
 }
 
 .answerWrapper {
+    /*overflow-wrap: break-word;*/
+    /*inline-size: 300px;*/
     border: 1px green dashed;
     padding: 5px;
     margin: 10px;
-    max-width: 400px;
+    /*max-width: 400px;*/
     font-weight: 700;
     text-align: center;
     font-size: 32px;

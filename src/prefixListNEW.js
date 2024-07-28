@@ -243,7 +243,7 @@ const prefixList = {
 "Puerto Rico": ["KP3","KP4"],
 "Qatar": ["A7"],
 "Republic of Korea": ["HL","6K-6N"],
-"Republic of Kosovo": ["Z6"],
+"Republic of Kosovo*": ["Z6"],
 "Reunion I.": ["FR","TO"],
 "Revillagigedo": ["XA4-XI4"],
 "Rodrigues I.": ["3B9"],
