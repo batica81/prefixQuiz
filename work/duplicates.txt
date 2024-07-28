@@ -1,0 +1,51 @@
+{
+    TX: [
+        'Austral I.',
+        'Chesterfield Is.',
+        'Clipperton I.',
+        'French Polynesia',
+        'Marquesas Is.',
+        'New Caledonia'
+    ],
+    FO: [
+    'Austral I.',
+    'Clipperton I.',
+    'French Polynesia',
+    'Marquesas Is.'
+],
+    'RA-RZ': [ 'Asiatic Russia', 'European Russia' ],
+    '3D2': [ 'Conway Reef', 'Fiji', 'Rotuma I.' ],
+    TO: [
+    'Glorioso Is.',
+    'Guadeloupe',
+    'Juan de Nova, Europa',
+    'Martinique',
+    'Mayotte',
+    'Reunion I.',
+    'Saint Barthelemy',
+    'Saint Martin',
+    'Tromelin I.'
+],
+    CE0: [ 'Easter I.', 'Juan Fernandez Is.', 'San Felix & San Ambrosio' ],
+    VK0: [ 'Heard I.', 'Macquarie I.' ],
+    FK: [ 'Chesterfield Is.', 'New Caledonia' ],
+    JD1: [ 'Minami Torishima', 'Ogasawara' ],
+    '3Y': [ 'Bouvet', 'Peter 1 I.' ],
+    VP6: [ 'Ducie I.', 'Pitcairn I.' ],
+    E5: [ 'N. Cook Is.', 'S. Cook Is.' ],
+    HK0: [ 'Malpelo I.', 'San Andres & Providencia' ],
+    VP8: [
+    'Falkland Is.',
+    'South Georgia I.',
+    'South Orkney Is.',
+    'South Sandwich Is.',
+    'South Shetland Is.'
+],
+    LU: [
+    'South Georgia I.',
+    'South Orkney Is.',
+    'South Sandwich Is.',
+    'South Shetland Is.'
+],
+    KH8: [ 'American Samoa', 'Swains I.' ]
+}

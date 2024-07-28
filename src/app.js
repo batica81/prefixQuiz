@@ -66,7 +66,7 @@ function initCountries() {
 
     let randomCountry =  getRandomKey(prefixList)
     let countryPrefix = getSingleOrRandom(prefixList[randomCountry])
-    this.innerText =  countryPrefix;
+    this.innerText =   countryPrefix.replace(/0/g, "Ø");;
 
 
 
@@ -126,7 +126,7 @@ function createDivWithTxtAndData(textContent) {
     let div = document.createElement("div");
 
     // Set the text content
-    div.textContent = textContent;
+    div.textContent = textContent.replace(/0/g, "Ø");
 
     // Optional: Add a class for styling
     div.classList.add("clickable-div");
