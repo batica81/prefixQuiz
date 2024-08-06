@@ -3,9 +3,21 @@ body {
     font-family: Verdana, sans-serif;
 }
 
+.center{
+    text-align: center !important;
+}
+
 .hidden {
     display: none !important;
 }
+
+/*.footer {*/
+/*    color: #fff;*/
+/*    text-align: center;*/
+/*    white-space: nowrap;*/
+/*    margin: 40px 10px 0;*/
+/*    display: inline-flex;*/
+/*}*/
 
 .questionWrapper {
     /*overflow-wrap: break-word;*/

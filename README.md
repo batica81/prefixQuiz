@@ -7,15 +7,16 @@ It has two modes, guess the country and guess the prefix.
 
 The list was taken from: https://www.iaru-r1.org/about-us/committees-and-working-groups/hf-committee-c4/documents-hf/ and modified a little bit.
 
+There may be some bugs and inconsistencies, so please report them if you find any.
+
 App is available for use or install at: https://prefixquiz.cinamontest.duckdns.org/
 
 TODO:
 
-- Handle 2 and 3 letter prefixes for search mode (currently disabled)
+- Handle prefixes longer than 2 letters in search mode (currently limited to 2)
 - Add keyboard shortcuts (space and numbers)
-- Fix service worker
-
-- Handle duplicate prefixes
-- Move to Cloudflare pages
-- Add weights for actual occurrences of prefixes
-- Add points
+- Move footer to the bottom of the page
+- Fix service worker (throws "please install chrome" error when no network) \
+  <br/>
+- Move deployment to Cloudflare pages
+- Add points for fun and gamification

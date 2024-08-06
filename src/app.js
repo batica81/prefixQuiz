@@ -165,6 +165,7 @@ function markCorrect(showCorrectStatusParam) {
     }
 }
 
+
 function findCountryByPrefix(prefixList, wantedPrefix) {
     for (const country in prefixList) {
         if (prefixList[country].indexOf(wantedPrefix.toUpperCase()) !== -1) {
@@ -176,7 +177,7 @@ function findCountryByPrefix(prefixList, wantedPrefix) {
 function updateResult() {
     const input = document.getElementById('twoLetterInput').value;
     if (input.length === 2) {
-        document.getElementById('result').textContent = findCountryByPrefix(prefixList,input);
+        document.getElementById('result').textContent = findCountryByPrefix(prefixListForLookup,input);
         document.getElementById('askedPrefix').textContent = input.toUpperCase();
         document.getElementById('twoLetterInput').value = '';
     } else {
