@@ -1,6 +1,10 @@
 body {
     background: #c2dcec;
     font-family: Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
 }
 
 .center{
@@ -11,30 +15,23 @@ body {
     display: none !important;
 }
 
-/*.footer {*/
-/*    color: #fff;*/
-/*    text-align: center;*/
-/*    white-space: nowrap;*/
-/*    margin: 40px 10px 0;*/
-/*    display: inline-flex;*/
-/*}*/
+.footer {
+    text-align: center;
+    padding: 10px;
+}
 
 .questionWrapper {
-    /*overflow-wrap: break-word;*/
-    /*inline-size: 300px;*/
     background: aliceblue;
     border: 1px black solid;
     padding: 5px;
-    margin: 10px;
-    /*max-width: 400px;*/
-    min-width: 280px;
+    margin: 10px auto;
+    width: 300px;
     font-weight: 700;
     text-align: center;
     font-size: 32px;
     user-select: none;
     margin-bottom: 30px;
     text-decoration: none;
-    /*border: none;*/
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adjust shadow as needed */
     transition: all 0.3s ease; /* Smooth transition on hover */
@@ -46,12 +43,9 @@ body {
 }
 
 .answerWrapper {
-    /*overflow-wrap: break-word;*/
-    /*inline-size: 300px;*/
     border: 1px green dashed;
     padding: 5px;
     margin: 10px;
-    /*max-width: 400px;*/
     font-weight: 700;
     text-align: center;
     font-size: 32px;
@@ -69,9 +63,10 @@ body {
 }
 
 .wrapper {
-    padding: 10px;
+    padding: 30px 10px;
     text-align: center;
     font-size: 20px;
+    flex: 1;
 }
 
 .modeChooserButton, .darkModeButton {
@@ -142,4 +137,9 @@ body > button, .darkmode-toggle--white {
 .strikethrough-zero {
     font-family: 'Arial', sans-serif;
     font-size: 24px;
+}
+
+#result {
+    line-break: anywhere;
+    max-width: 800px;
 }

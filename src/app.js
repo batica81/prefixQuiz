@@ -153,31 +153,39 @@ function markCorrect(showCorrectStatusParam) {
     if (showCorrectStatusParam === true) {
         document.querySelectorAll('div[data-param="correctAnswer"]').forEach( function (c) {
             c.classList.add('correctAnswer');
-
-            // classList.add('hidden')
         })
     } else if (showCorrectStatusParam === false){
         document.querySelectorAll('div[data-param="correctAnswer"]').forEach( function (c) {
             c.classList.remove('correctAnswer');
-
-            // c.classList.remove('hidden');
         })
     }
 }
 
 
 function findCountryByPrefix(prefixList, wantedPrefix) {
+    let result = [];
     for (const country in prefixList) {
-        if (prefixList[country].indexOf(wantedPrefix.toUpperCase()) !== -1) {
-            return nameCleanup(country);
+        if (prefixList[country].some(prefix => prefix.startsWith(wantedPrefix.toUpperCase()))) {
+            result.push( prefixList[country] + ' - ' +  nameCleanup(country));
         }
     }
+    return result.length === 0 ? ['/'] : result;
 }
 
 function updateResult() {
     const input = document.getElementById('twoLetterInput').value;
-    if (input.length === 2) {
-        document.getElementById('result').textContent = findCountryByPrefix(prefixListForLookup,input);
+    const resultContainer = document.getElementById('result');
+    resultContainer.innerHTML = ''; // Clear previous results
+
+    if (input.length === 1) {
+        const countries = findCountryByPrefix(prefixListForLookup, input);
+        countries.forEach(country => {
+            const countryElement = document.createElement('div');
+            countryElement.textContent = country;
+            resultContainer.appendChild(document.createElement('br'));
+            resultContainer.appendChild(countryElement);
+            resultContainer.appendChild(document.createElement('br'));
+        });
         document.getElementById('askedPrefix').textContent = input.toUpperCase();
         document.getElementById('twoLetterInput').value = '';
     } else {
