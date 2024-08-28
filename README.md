@@ -15,8 +15,6 @@ TODO:
 
 - Handle prefixes longer than 2 letters in search mode (currently limited to 2)
 - Add keyboard shortcuts (space and numbers)
-- Move footer to the bottom of the page
-- Fix service worker (throws "please install chrome" error when no network) \
-  <br/>
+- Fix service worker (throws "please install chrome" error when no network) 
 - Move deployment to Cloudflare pages
 - Add points for fun and gamification

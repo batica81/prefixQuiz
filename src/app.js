@@ -263,4 +263,30 @@ window.onload = (event) => {
 
     currentPrefix.addEventListener('click', initCountries)
     currentCountry.addEventListener('click', initPrefixes)
+
+    // function initKeys() {
+    //     keyboardJS.bind('space', function (e) {
+    //         initCountries();
+    //         initPrefixes();
+    //     });
+    //     keyboardJS.bind('right', function (e) {
+    //         showNext();
+    //     });
+    // }
+
+    // for (let i = 0; i < 9; i++) {
+    //     keyboardJS.bind((i + 1).toString(), function(e) {
+    //         if (document.querySelectorAll('.answersList li').length > i) {
+    //             document.querySelectorAll('.answersList li')[i].click()
+    //         }
+    //     });
+    //     keyboardJS.bind('num' + (i + 1).toString(), function(e) {
+    //         if (document.querySelectorAll('.answersList li').length > i) {
+    //             document.querySelectorAll('.answersList li')[i].click()
+    //         }
+    //     });
+    // }
+
+
+    // initKeys();
 };
