@@ -179,7 +179,7 @@ function updateResult() {
 
     if (input.length === 2 || ['B','G','M','F','I','E','K','W','N'].includes(input.toUpperCase())) {
         const countries = findCountryByPrefix(prefixListForLookup, input);
-        console.log(countries)
+        document.getElementById('askedPrefix').textContent = input.toUpperCase();
         countries.forEach(country => {
             const countryElement = document.createElement('div');
             countryElement.textContent = country;
