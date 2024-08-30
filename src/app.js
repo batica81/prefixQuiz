@@ -177,8 +177,9 @@ function updateResult() {
     const resultContainer = document.getElementById('result');
     resultContainer.innerHTML = ''; // Clear previous results
 
-    if (input.length === 1) {
+    if (input.length === 2 || ['B','G','M','F','I','E','K','W','N'].includes(input.toUpperCase())) {
         const countries = findCountryByPrefix(prefixListForLookup, input);
+        console.log(countries)
         countries.forEach(country => {
             const countryElement = document.createElement('div');
             countryElement.textContent = country;
@@ -186,8 +187,10 @@ function updateResult() {
             resultContainer.appendChild(countryElement);
             resultContainer.appendChild(document.createElement('br'));
         });
-        document.getElementById('askedPrefix').textContent = input.toUpperCase();
-        document.getElementById('twoLetterInput').value = '';
+        if (input.length === 2 || countries.length === 1) {
+            document.getElementById('askedPrefix').textContent = input.toUpperCase();
+            document.getElementById('twoLetterInput').value = '';
+        }
     } else {
         document.getElementById('twoLetterInput').value = document.getElementById('twoLetterInput').value.toUpperCase();
     }

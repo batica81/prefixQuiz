@@ -1,6 +1,6 @@
 body {
     background: #c2dcec;
-    font-family: Verdana, sans-serif;
+    font-family: system-ui, sans-serif;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -104,6 +104,7 @@ body > button, .darkmode-toggle--white {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adjust shadow as needed */
     transition: all 0.1s ease; /* Smooth transition on hover */
     isolation: isolate !important;
+    min-width: 270px;
 }
 
 .clickable-div:hover {
@@ -123,6 +124,7 @@ body > button, .darkmode-toggle--white {
     text-align: center;
     margin: 10px;
     padding: 5px;
+    text-transform: uppercase;
 }
 
 #askedPrefix, #result {
@@ -141,5 +143,5 @@ body > button, .darkmode-toggle--white {
 
 #result {
     line-break: anywhere;
-    max-width: 800px;
+    max-width: 870px;
 }
