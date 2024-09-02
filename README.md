@@ -9,11 +9,10 @@ The list was taken from: https://www.iaru-r1.org/about-us/committees-and-working
 
 There may be some bugs and inconsistencies, so please report them if you find any.
 
-App is available for use or install at: https://prefixquiz.cinamontest.duckdns.org/
+App is available for use or install at: https://prefixquiz.pages.dev/
 
 TODO:
 
 - Add keyboard shortcuts (space and numbers)
 - Fix service worker (throws "please install chrome" error when no network) 
-- Move deployment to Cloudflare pages
 - Add points for fun and gamification
