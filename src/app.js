@@ -262,6 +262,7 @@ window.onload = (event) => {
         Array.from(gameWrapper).forEach(gw => gw.classList.add("hidden"))
         lookupGameWrapper.classList.remove("hidden");
         showCorrectWrapper.classList.add("hidden");
+        twoLetterInput.focus()
     })
 
     currentPrefix.addEventListener('click', initCountries)
