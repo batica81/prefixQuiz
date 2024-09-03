@@ -13,6 +13,7 @@ App is available for use or install at: https://prefixquiz.pages.dev/
 
 TODO:
 
+- Handle 3 letter prefixes (zg2, ssm....)
 - Add keyboard shortcuts (space and numbers)
 - Fix service worker (throws "please install chrome" error when no network) 
 - Add points for fun and gamification
