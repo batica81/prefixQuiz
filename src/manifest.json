@@ -1,6 +1,6 @@
 {
   "name": "Prefix Quiz",
-  "id": "https://prefixquiz.pages.dev",
+  "id": "https://prefixquiz.pages.dev/",
   "short_name": "PrefixQuiz",
   "description": "Progressive Web App that quizzes your prefix knowledge.",
   "lang": "en",
@@ -32,6 +32,7 @@
   "start_url": "/index.html",
   "scope": ".",
   "display": "standalone",
+  "orientation": "portrait",
   "display_override": ["window-controls-overlay"],
   "theme_color": "#B12A34",
   "background_color": "#ffffff"
