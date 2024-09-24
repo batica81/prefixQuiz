@@ -1,4 +1,4 @@
-const CACHE_NAME = "v.1.0.2";
+const CACHE_NAME = "v.1.0.3";
 const STATIC_CACHE_URLS = [
     "/app.js",
     "/darkmode-js.min.js",
