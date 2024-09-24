@@ -195,16 +195,17 @@ function updateResult() {
 
 window.onload = (event) => {
 
-    if ("serviceWorker" in navigator) {
-        navigator.serviceWorker
-            .register("/service-worker.js")
-            .then(serviceWorker => {
-                console.log("Service Worker registered: ", serviceWorker);
-            })
-            .catch(error => {
-                console.error("Error registering the Service Worker: ", error);
-            });
-    }
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/service-worker.js')
+      .then(registration => {
+        console.log('Service Worker registered with scope:', registration.scope);
+      })
+      .catch(error => {
+        console.error('Service Worker registration failed:', error);
+      });
+  });
+}
 
     let gameWrapper = document.getElementsByClassName('gameWrapper')
 

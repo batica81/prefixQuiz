@@ -1,8 +1,9 @@
-const CACHE_NAME = "v.1.0.1";
+const CACHE_NAME = "v.1.0.2";
 const STATIC_CACHE_URLS = [
     "/app.js",
     "/darkmode-js.min.js",
     "/favicon.ico",
+    "/icon-192.png",
     "/icon-512.png",
     "/index.html",
     "/keyboard.min.js",
