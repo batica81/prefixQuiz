@@ -38,10 +38,7 @@ function getRandomMembers(array, numMembers, exclude=null) {
     // Clone the array to avoid mutating the original array
 
     if (exclude) {
-        let index = array.indexOf(exclude);
-        if (index !== -1) {
-            array.splice(index, 1);
-        }
+        array = array.filter(item => item !== exclude);
     }
 
     const shuffledArray = array.slice();
@@ -60,13 +57,13 @@ function nameCleanup(countryName) {
     return countryName.includes('(') ? countryName.split('(')[0].trim() : countryName
 }
 
-function initCountries() {
+function initCountries(currentPrefix) {
     let countryOptions = document.getElementsByClassName('countryOptions')[0];
     countryOptions.innerHTML = '';
 
     let randomCountry =  getRandomKey(prefixList)
     let countryPrefix = getSingleOrRandom(prefixList[randomCountry])
-    this.innerText =   countryPrefix.replace(/0/g, "Ø");;
+    currentPrefix.innerText =   countryPrefix.replace(/0/g, "Ø"); //
 
 
 
@@ -91,12 +88,12 @@ function initCountries() {
     shuffle_children(countryOptions)
 }
 
-function initPrefixes() {
+function initPrefixes(currentCountry) {
     let prefixOptions = document.getElementsByClassName('prefixOptions')[0];
     prefixOptions.innerHTML = '';
 
     let randomCountry =  getRandomKey(prefixList)
-    this.innerText =  nameCleanup(randomCountry)
+    currentCountry.innerText =  nameCleanup(randomCountry)
 
 
     // adding correct prefix to the list
@@ -265,32 +262,38 @@ window.onload = (event) => {
         twoLetterInput.focus()
     })
 
-    currentPrefix.addEventListener('click', initCountries)
-    currentCountry.addEventListener('click', initPrefixes)
+     currentPrefix.addEventListener('click', function() {
+        initCountries(currentPrefix);
+     });
 
-    // function initKeys() {
-    //     keyboardJS.bind('space', function (e) {
-    //         initCountries();
-    //         initPrefixes();
-    //     });
-    //     keyboardJS.bind('right', function (e) {
-    //         showNext();
-    //     });
-    // }
+    currentCountry.addEventListener('click', function() {
+        initPrefixes(currentCountry);
+     });
 
-    // for (let i = 0; i < 9; i++) {
-    //     keyboardJS.bind((i + 1).toString(), function(e) {
-    //         if (document.querySelectorAll('.answersList li').length > i) {
-    //             document.querySelectorAll('.answersList li')[i].click()
-    //         }
-    //     });
-    //     keyboardJS.bind('num' + (i + 1).toString(), function(e) {
-    //         if (document.querySelectorAll('.answersList li').length > i) {
-    //             document.querySelectorAll('.answersList li')[i].click()
-    //         }
-    //     });
-    // }
+    function initKeys() {
+        keyboardJS.bind('space', function (e) {
+            initCountries(currentPrefix);
+            initPrefixes(currentCountry);
+        });
+        keyboardJS.bind('right', function (e) {
+            initCountries(currentPrefix);
+            initPrefixes(currentCountry);
+        });
+    }
+
+    for (let i = 0; i < 4; i++) {
+        keyboardJS.bind((i + 1).toString(), function(e) {
+            if (document.querySelectorAll('.countryOptions .answerWrapper').length > i) {
+                document.querySelectorAll('.countryOptions .answerWrapper')[i].click()
+            }
+        });
+        keyboardJS.bind('num' + (i + 1).toString(), function(e) {
+            if (document.querySelectorAll('.countryOptions .answerWrapper').length > i) {
+                document.querySelectorAll('.countryOptions .answerWrapper')[i].click()
+            }
+        });
+    }
 
 
-    // initKeys();
+    initKeys();
 };

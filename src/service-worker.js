@@ -1,22 +1,37 @@
-const CACHE_NAME = "V1";
+const CACHE_NAME = "v.1.0.1";
 const STATIC_CACHE_URLS = [
-    "app.js",
-    "darkmode-js.min.js",
-    "favicon.ico",
-    "icon-512.png",
-    "index.html",
-    "manifest.json",
-    "prefixList.js",
-    "sc01.png",
-    "sc02.png",
-    "service-worker.js",
-    "style.css"
+    "/app.js",
+    "/darkmode-js.min.js",
+    "/favicon.ico",
+    "/icon-512.png",
+    "/index.html",
+    "/keyboard.min.js",
+    "/manifest.json",
+    "/offline.html",
+    "/prefixList.js",
+    "/prefixListNEW.js",
+    "/prefixListNEW_ForLookup.js",
+    "/sc01.png",
+    "/sc02.png",
+    "/service-worker.js",
+    "/style.css"
 ];
 
 self.addEventListener("install", (event) => {
     console.log("Service Worker installing.");
     event.waitUntil(
-        caches.open(CACHE_NAME).then((cache) => cache.addAll(STATIC_CACHE_URLS))
+        caches.open(CACHE_NAME).then((cache) => {
+            return cache.addAll(STATIC_CACHE_URLS).catch((error) => {
+                console.error("Failed to cache:", error);
+                STATIC_CACHE_URLS.forEach(async (url) => {
+                    try {
+                        await cache.add(url);
+                    } catch (e) {
+                        console.error(`Failed to cache ${url}:`, e);
+                    }
+                });
+            });
+        })
     );
 });
 
@@ -35,14 +50,24 @@ self.addEventListener("activate", event => {
 
 self.addEventListener("fetch", (event) => {
     event.respondWith(
-        caches
-            .match(event.request)
-            .then(cached => cached
-                // network request if not in cache
-                || fetch(event.request).catch(() =>
-                    // fallback: return offline.html if fetch fails
-                    caches.match('offline.html')
-                )
-            )
+        caches.match(event.request).then((cachedResponse) => {
+            // Return cached response if found
+            if (cachedResponse) {
+                return cachedResponse;
+            }
+            // Otherwise, fetch from network
+            return fetch(event.request).then((networkResponse) => {
+                // Cache the new response for future requests
+                return caches.open(CACHE_NAME).then((cache) => {
+                    cache.put(event.request, networkResponse.clone());
+                    return networkResponse;
+                });
+            }).catch(() => {
+                // Fallback to offline.html for navigation requests
+                if (event.request.mode === 'navigate') {
+                    return caches.match('/offline.html');
+                }
+            });
+        })
     );
 });
