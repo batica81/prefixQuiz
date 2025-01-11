@@ -6,7 +6,10 @@ let randomCountry =  getRandomKey(prefixList)
 let countryPrefix = getSingleOrRandom(prefixList[randomCountry])
 
 let showCorrectStatus = false;
-let currentLang = "en"; // Default language
+let currentLang = "rs"; // Default language
+
+let correctCount = 0;
+let fullCount = 0;
 
 function translate(key) {
     return translations[currentLang][key] || key;

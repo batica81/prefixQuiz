@@ -15,6 +15,10 @@ body {
     display: none !important;
 }
 
+.bold {
+    font-weight: bold;
+}
+
 .footer {
     text-align: center;
     padding: 10px;

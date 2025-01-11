@@ -13,6 +13,7 @@ const translations = {
         "country prefixes": "country prefixes",
         "It has three modes: guess the country, guess the prefix and prefix lookup.": "It has three modes: guess the country, guess the prefix and prefix lookup.",
         "en": "rs",
+        "Points:": "Points:",
     },
     rs: {
         "Guess Prefix": "Prepoznaj prefiks",
@@ -28,5 +29,6 @@ const translations = {
         "country prefixes": "prefikse država",
         "It has three modes: guess the country, guess the prefix and prefix lookup.": "Igra ima tri moda: prepoznaj državu, prepoznaj prefiks i pretraži prefiks.",
         "en": "en",
+        "Points:": "Poeni:",
     },
 };
