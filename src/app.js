@@ -6,6 +6,23 @@ let randomCountry =  getRandomKey(prefixList)
 let countryPrefix = getSingleOrRandom(prefixList[randomCountry])
 
 let showCorrectStatus = false;
+let currentLang = "en"; // Default language
+
+function translate(key) {
+    return translations[currentLang][key] || key;
+}
+
+function switchLanguage(lang) {
+    currentLang = lang;
+    updateTexts();
+}
+
+function updateTexts() {
+    document.querySelectorAll("[data-translate]").forEach((el) => {
+        const key = el.getAttribute("data-translate");
+        el.innerText = translate(key);
+    });
+}
 
 function getRandomKey(obj) {
     const keys = Object.keys(obj);
@@ -223,6 +240,8 @@ if ('serviceWorker' in navigator) {
     let currentCountry = document.getElementsByClassName('currentCountry')[0];
 
     let darkModeButton = document.querySelector('#darkMode');
+    let langSelectButton = document.querySelector('#langSelect');
+
     let showCorrect = document.querySelector('#showCorrect');
 
     let twoLetterInput = document.querySelector('#twoLetterInput');
@@ -242,6 +261,11 @@ if ('serviceWorker' in navigator) {
 
     darkModeButton.addEventListener('click', function () {
         darkMode.toggle();
+    });
+
+    langSelectButton.addEventListener('click', function () {
+        currentLang === 'en'? currentLang = 'rs' : currentLang = 'en'
+        switchLanguage(currentLang);
     });
 
     guessCountryButton.addEventListener('click', function (){
@@ -295,6 +319,6 @@ if ('serviceWorker' in navigator) {
         });
     }
 
-
+    switchLanguage(currentLang);
     initKeys();
 };
