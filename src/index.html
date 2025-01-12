@@ -3,9 +3,11 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<link rel="manifest" href="manifest.json" />
 	<link rel="stylesheet" href="style.css">
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+
 	<script src="darkmode-js.min.js"></script>
 	<script src="keyboard.min.js"></script>
 	<script src="prefixListNEW.js"></script>
@@ -16,48 +18,45 @@
 	<title>Prefix Quiz</title>
 </head>
 <body>
+		<div class="wrapper">
+			<header><span data-translate="This is a game to help you learn">This is a game to help you learn</span> <a href="https://www.iaru-r1.org/about-us/committees-and-working-groups/hf-committee-c4/documents-hf/" target="_blank"><span data-translate="country prefixes">country prefixes</span></a>. <span data-translate="It has three modes: guess the country, guess the prefix and prefix lookup.">It has three modes: guess the country, guess the prefix and prefix lookup.</span></header>
 
-<div class="wrapper">
+			<div class="modeChooser">
+				<button class="modeChooserButton guessCountryButton" data-translate="Guess Prefix"></button>
+				<button class="modeChooserButton guessPrefixButton" data-translate="Guess Country"></button>
+				<button class="modeChooserButton prefixLookupButton" data-translate="Prefix Lookup"></button>
+				<button class="darkMode darkModeButton" id="darkMode" data-translate="Dark Mode"></button>
+				<button class="langSelect langSelectButton" id="langSelect" data-translate="en"></button>
 
-	<header><span data-translate="This is a game to help you learn">This is a game to help you learn</span> <a href="https://www.iaru-r1.org/about-us/committees-and-working-groups/hf-committee-c4/documents-hf/" target="_blank"><span data-translate="country prefixes">country prefixes</span></a>. <span data-translate="It has three modes: guess the country, guess the prefix and prefix lookup.">It has three modes: guess the country, guess the prefix and prefix lookup.</span></header>
+				<div class="pointsWrapper hidden"><span class="pointsLabel" data-translate="Points:"></span> <span class="correctCount">34</span>/<span class="totalCount">55</span> <span class="pointsPercent bold">88</span>%</div>
+				<div class="showCorrectWrapper">
+					<label class="showCorrectComponent" for="showCorrect" data-translate="Show Correct"></label>
+					<input class="showCorrectComponent" type="checkbox" name="showCorrect" id="showCorrect">
+				</div>
+			</div>
 
-	<div class="modeChooser">
-		<button class="modeChooserButton guessCountryButton" data-translate="Guess Prefix"></button>
-		<button class="modeChooserButton guessPrefixButton" data-translate="Guess Country"></button>
-		<button class="modeChooserButton prefixLookupButton" data-translate="Prefix Lookup"></button>
+			<div class="gameWrapper prefixGameWrapper">
+				<div class="questionWrapper currentPrefix">START</div>
+				<div class="countryOptions"></div>
+			</div>
 
-		<button class="darkMode darkModeButton" id="darkMode" data-translate="Dark Mode"></button>
-		<button class="langSelect langSelectButton" id="langSelect" data-translate="en"></button>
+			<div class="gameWrapper countryGameWrapper hidden">
+				<div class="questionWrapper currentCountry">START</div>
+				<div class="prefixOptions"></div>
+			</div>
 
-		<div class="pointsWrapper"><span class="pointsLabel" data-translate="Points:"></span> <span class="points">34/44</span> <span class="pointsPercent bold">88%</span></div>
-		<div class="showCorrectWrapper">
-			<label class="showCorrectComponent" for="showCorrect" data-translate="Show Correct"></label>
-			<input class="showCorrectComponent" type="checkbox" name="showCorrect" id="showCorrect">
+			<div class="gameWrapper lookupGameWrapper hidden">
+				<div class="questionWrapper">
+					<label for="twoLetterInput" data-translate="Enter prefix"></label><br>
+					<input type="text" id="twoLetterInput" maxlength="2">
+				</div>
+				<div id="askedPrefix" data-translate="Prefix">Prefix</div>
+				<div id="result" data-translate="Country">Country</div>
+			</div>
+
 		</div>
-	</div>
-
-	<div class="gameWrapper prefixGameWrapper">
-		<div class="questionWrapper currentPrefix">START</div>
-		<div class="countryOptions"></div>
-	</div>
-
-	<div class="gameWrapper countryGameWrapper hidden">
-		<div class="questionWrapper currentCountry">START</div>
-		<div class="prefixOptions"></div>
-	</div>
-
-	<div class="gameWrapper lookupGameWrapper hidden">
-		<div class="questionWrapper">
-			<label for="twoLetterInput" data-translate="Enter prefix"></label><br>
-			<input type="text" id="twoLetterInput" maxlength="2">
+		<div class="footer center">
+			<div><span data-translate="Created by YU4HAK in 2024. Free code available at:"></span> <a href="https://github.com/batica81/prefixQuiz" target="_blank">https://github.com/batica81/prefixQuiz </a></div>
 		</div>
-		<div id="askedPrefix" data-translate="Prefix">Prefix</div>
-		<div id="result" data-translate="Country">Country</div>
-	</div>
-
-</div>
-<div class="footer center">
-	<div><span data-translate="Created by YU4HAK in 2024. Free code available at:"></span> <a href="https://github.com/batica81/prefixQuiz" target="_blank">https://github.com/batica81/prefixQuiz </a></div>
-</div>
 </body>
 </html>

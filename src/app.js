@@ -9,7 +9,13 @@ let showCorrectStatus = false;
 let currentLang = "rs"; // Default language
 
 let correctCount = 0;
-let fullCount = 0;
+let totalCount = 0;
+let didWrong = false;
+
+function calculatePoints(correctCount, totalCount) {
+    if (totalCount === 0) {return 0}
+    else return Math.round((correctCount / totalCount) * 100)
+}
 
 function translate(key) {
     return translations[currentLang][key] || key;
@@ -49,9 +55,7 @@ function mergeArrays(obj) {
     const mergedArray = Object.values(obj).reduce((acc, curr) => acc.concat(curr), []);
 
     // Remove duplicates
-    const uniqueArray = Array.from(new Set(mergedArray));
-
-    return uniqueArray;
+    return Array.from(new Set(mergedArray));
 }
 
 function getRandomMembers(array, numMembers, exclude=null) {
@@ -85,8 +89,6 @@ function initCountries(currentPrefix) {
     let countryPrefix = getSingleOrRandom(prefixList[randomCountry])
     currentPrefix.innerText =   countryPrefix.replace(/0/g, "Ø"); //
 
-
-
     // adding correct country to the list
     let tmpDiv = createDivWithTxtAndData(nameCleanup(randomCountry))
     tmpDiv.setAttribute("data-param", "correctAnswer");
@@ -114,7 +116,6 @@ function initPrefixes(currentCountry) {
 
     let randomCountry =  getRandomKey(prefixList)
     currentCountry.innerText =  nameCleanup(randomCountry)
-
 
     // adding correct prefix to the list
     let correctPrefix =  getSingleOrRandom(prefixList[randomCountry])
@@ -148,14 +149,15 @@ function createDivWithTxtAndData(textContent) {
     // Optional: Add a class for styling
     div.classList.add("clickable-div");
     div.classList.add("answerWrapper");
-
     return div;
 }
 
 function checkAnswer() {
     if (this.getAttribute('data-param') === 'correctAnswer') {
         this.classList.add('correctAnswer')
+        if (!didWrong) correctCount += 1;
     } else {
+        didWrong = true;
         this.classList.add('wrongAnswer')
     }
 }
@@ -177,7 +179,6 @@ function markCorrect(showCorrectStatusParam) {
         })
     }
 }
-
 
 function findCountryByPrefix(prefixList, wantedPrefix) {
     let result = [];
@@ -228,12 +229,11 @@ if ('serviceWorker' in navigator) {
 }
 
     let gameWrapper = document.getElementsByClassName('gameWrapper')
-
     let prefixGameWrapper = document.getElementsByClassName('prefixGameWrapper')[0]
     let countryGameWrapper = document.getElementsByClassName('countryGameWrapper')[0]
     let lookupGameWrapper = document.getElementsByClassName('lookupGameWrapper')[0]
-
     let showCorrectWrapper = document.getElementsByClassName('showCorrectWrapper')[0]
+    let pointsWrapper = document.getElementsByClassName('pointsWrapper')[0];
 
     let guessCountryButton = document.getElementsByClassName('guessCountryButton')[0];
     let guessPrefixButton = document.getElementsByClassName('guessPrefixButton')[0];
@@ -242,11 +242,13 @@ if ('serviceWorker' in navigator) {
     let currentPrefix = document.getElementsByClassName('currentPrefix')[0];
     let currentCountry = document.getElementsByClassName('currentCountry')[0];
 
+    let correctCountSpan = document.getElementsByClassName('correctCount')[0];
+    let totalCountSpan = document.getElementsByClassName('totalCount')[0];
+    let pointsPercentSpan = document.getElementsByClassName('pointsPercent')[0];
+
     let darkModeButton = document.querySelector('#darkMode');
     let langSelectButton = document.querySelector('#langSelect');
-
     let showCorrect = document.querySelector('#showCorrect');
-
     let twoLetterInput = document.querySelector('#twoLetterInput');
 
     const darkMode = new Darkmode({
@@ -256,6 +258,7 @@ if ('serviceWorker' in navigator) {
     showCorrect.addEventListener('change', function () {
         showCorrectStatus = !showCorrectStatus;
         markCorrect(showCorrectStatus);
+        pointsWrapper.classList.add("hidden");
     });
 
     twoLetterInput.addEventListener('input', function () {
@@ -275,27 +278,42 @@ if ('serviceWorker' in navigator) {
         Array.from(gameWrapper).forEach(gw => gw.classList.add("hidden"))
         countryGameWrapper.classList.remove("hidden");
         showCorrectWrapper.classList.remove("hidden");
+        pointsWrapper.classList.remove("hidden");
     })
 
     guessPrefixButton.addEventListener('click', function (){
         Array.from(gameWrapper).forEach(gw => gw.classList.add("hidden"))
         prefixGameWrapper.classList.remove("hidden");
         showCorrectWrapper.classList.remove("hidden");
+        pointsWrapper.classList.remove("hidden");
     })
 
     prefixLookupButton.addEventListener('click', function (){
         Array.from(gameWrapper).forEach(gw => gw.classList.add("hidden"))
         lookupGameWrapper.classList.remove("hidden");
         showCorrectWrapper.classList.add("hidden");
+        pointsWrapper.classList.add("hidden");
         twoLetterInput.focus()
     })
 
      currentPrefix.addEventListener('click', function() {
         initCountries(currentPrefix);
+        pointsWrapper.classList.remove("hidden");
+        totalCountSpan.innerText = totalCount;
+        correctCountSpan.innerText = correctCount;
+        pointsPercentSpan.innerHTML = calculatePoints(correctCount, totalCount).toString();
+        totalCount += 1;
+        didWrong = false;
      });
 
     currentCountry.addEventListener('click', function() {
         initPrefixes(currentCountry);
+        pointsWrapper.classList.remove("hidden");
+        totalCountSpan.innerText = totalCount;
+        correctCountSpan.innerText = correctCount;
+        pointsPercentSpan.innerHTML = calculatePoints(correctCount, totalCount).toString();
+        totalCount += 1;
+        didWrong = false;
      });
 
     function initKeys() {
