@@ -10,7 +10,3 @@ The list was taken from: https://www.iaru-r1.org/about-us/committees-and-working
 There may be some bugs and inconsistencies, so please report them if you find any.
 
 App is available for use or install at: https://prefixquiz.pages.dev/
-
-TODO:
-
-- Add points for fun and gamification

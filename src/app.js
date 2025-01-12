@@ -259,6 +259,12 @@ if ('serviceWorker' in navigator) {
         showCorrectStatus = !showCorrectStatus;
         markCorrect(showCorrectStatus);
         pointsWrapper.classList.add("hidden");
+        correctCount = 0;
+        totalCount = 0;
+        calculatePoints(0,0)
+        correctCountSpan.innerText = "0";
+        totalCountSpan.innerText = "0";
+        pointsPercentSpan.innerText = "0";
     });
 
     twoLetterInput.addEventListener('input', function () {
@@ -278,14 +284,26 @@ if ('serviceWorker' in navigator) {
         Array.from(gameWrapper).forEach(gw => gw.classList.add("hidden"))
         countryGameWrapper.classList.remove("hidden");
         showCorrectWrapper.classList.remove("hidden");
-        pointsWrapper.classList.remove("hidden");
+        if (!showCorrectStatus) pointsWrapper.classList.remove("hidden");
+        correctCount = 0;
+        totalCount = 0;
+        calculatePoints(0,0)
+        correctCountSpan.innerText = "0";
+        totalCountSpan.innerText = "0";
+        pointsPercentSpan.innerText = "0";
     })
 
     guessPrefixButton.addEventListener('click', function (){
         Array.from(gameWrapper).forEach(gw => gw.classList.add("hidden"))
         prefixGameWrapper.classList.remove("hidden");
         showCorrectWrapper.classList.remove("hidden");
-        pointsWrapper.classList.remove("hidden");
+        if (!showCorrectStatus) pointsWrapper.classList.remove("hidden");
+        correctCount = 0;
+        totalCount = 0;
+        calculatePoints(0,0)
+        correctCountSpan.innerText = "0";
+        totalCountSpan.innerText = "0";
+        pointsPercentSpan.innerText = "0";
     })
 
     prefixLookupButton.addEventListener('click', function (){
@@ -298,7 +316,7 @@ if ('serviceWorker' in navigator) {
 
      currentPrefix.addEventListener('click', function() {
         initCountries(currentPrefix);
-        pointsWrapper.classList.remove("hidden");
+        if (!showCorrectStatus) pointsWrapper.classList.remove("hidden");
         totalCountSpan.innerText = totalCount;
         correctCountSpan.innerText = correctCount;
         pointsPercentSpan.innerHTML = calculatePoints(correctCount, totalCount).toString();
@@ -308,7 +326,7 @@ if ('serviceWorker' in navigator) {
 
     currentCountry.addEventListener('click', function() {
         initPrefixes(currentCountry);
-        pointsWrapper.classList.remove("hidden");
+        if (!showCorrectStatus) pointsWrapper.classList.remove("hidden");
         totalCountSpan.innerText = totalCount;
         correctCountSpan.innerText = correctCount;
         pointsPercentSpan.innerHTML = calculatePoints(correctCount, totalCount).toString();
