@@ -125,7 +125,7 @@ function initPrefixes(currentCountry) {
         tmpDiv.classList.add('correctAnswer')
     } else {
         // create an array of prefixes excluding the correct one
-        let randomPrefixes = getRandomMembers(allPrefixes, 3, countryPrefix)
+        let randomPrefixes = getRandomMembers(allPrefixes, 3, correctPrefix)
 
         randomPrefixes.forEach(rp => {
             let tmpDiv = createDivWithTxtAndData(rp)
