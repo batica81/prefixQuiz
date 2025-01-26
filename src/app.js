@@ -10,7 +10,7 @@ let currentLang = "rs"; // Default language
 
 let correctCount = 0;
 let totalCount = 0;
-let didWrong = false;
+let didAnswer = false;
 
 function calculatePoints(correctCount, totalCount) {
     if (totalCount === 0) {return 0}
@@ -164,9 +164,10 @@ function createDivWithTxtAndData(textContent) {
 function checkAnswer() {
     if (this.getAttribute('data-param') === 'correctAnswer') {
         this.classList.add('correctAnswer')
-        if (!didWrong) correctCount += 1;
+        if (!didAnswer) correctCount += 1;
+        didAnswer = true;
     } else {
-        didWrong = true;
+        didAnswer = true;
         this.classList.add('wrongAnswer')
     }
 }
@@ -330,7 +331,7 @@ if ('serviceWorker' in navigator) {
         correctCountSpan.innerText = correctCount;
         pointsPercentSpan.innerHTML = calculatePoints(correctCount, totalCount).toString();
         totalCount += 1;
-        didWrong = false;
+        didAnswer = false;
      });
 
     currentCountry.addEventListener('click', function() {
@@ -340,7 +341,7 @@ if ('serviceWorker' in navigator) {
         correctCountSpan.innerText = correctCount;
         pointsPercentSpan.innerHTML = calculatePoints(correctCount, totalCount).toString();
         totalCount += 1;
-        didWrong = false;
+        didAnswer = false;
      });
 
     function initKeys() {
