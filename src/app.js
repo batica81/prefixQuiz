@@ -1,9 +1,9 @@
 
-const allCountries = Object.keys(prefixList);
-const allPrefixes = mergeArrays(prefixList);
+const allCountries = Object.keys(prefixListForLookup);
+const allPrefixes = mergeArrays(prefixListForLookup);
 
-let randomCountry =  getRandomKey(prefixList)
-let countryPrefix = getSingleOrRandom(prefixList[randomCountry])
+let randomCountry =  getRandomKey(prefixListForLookup)
+let countryPrefix = getSingleOrRandom(prefixListForLookup[randomCountry])
 
 let showCorrectStatus = false;
 let currentLang = "rs"; // Default language
@@ -81,13 +81,23 @@ function nameCleanup(countryName) {
     return countryName.includes('(') ? countryName.split('(')[0].trim() : countryName
 }
 
+function removeCountriesWithPrefix(countries, prefix) {
+    const filteredCountries = {};
+    for (const country in countries) {
+        if (!countries[country].includes(prefix)) {
+            filteredCountries[country] = countries[country];
+        }
+    }
+    return filteredCountries;
+}
+
 function initCountries(currentPrefix) {
     let countryOptions = document.getElementsByClassName('countryOptions')[0];
     countryOptions.innerHTML = '';
 
-    let randomCountry =  getRandomKey(prefixList)
-    let countryPrefix = getSingleOrRandom(prefixList[randomCountry])
-    currentPrefix.innerText =   countryPrefix.replace(/0/g, "Ø"); //
+    let randomCountry =  getRandomKey(prefixListForLookup)
+    let countryPrefix = getSingleOrRandom(prefixListForLookup[randomCountry])
+    currentPrefix.innerText = countryPrefix.replace(/0/g, "Ø"); //
 
     // adding correct country to the list
     let tmpDiv = createDivWithTxtAndData(nameCleanup(randomCountry))
@@ -95,9 +105,8 @@ function initCountries(currentPrefix) {
     if (showCorrectStatus === true) {
         tmpDiv.classList.add('correctAnswer')
     } else {
-        // create an array of countries excluding the correct one
-        let randomCountries = getRandomMembers(allCountries, 3, randomCountry)
-
+        // create an array of countries excluding the correct one, and others with the same prefix
+        let randomCountries = getRandomMembers(Object.keys(removeCountriesWithPrefix(prefixListForLookup, countryPrefix)), 3, randomCountry)
         randomCountries.forEach(rp => {
             let tmpDiv = createDivWithTxtAndData(nameCleanup(rp))
             tmpDiv.addEventListener('click', checkAnswer)
@@ -107,18 +116,18 @@ function initCountries(currentPrefix) {
     tmpDiv.addEventListener('click', checkAnswer)
     countryOptions.appendChild(tmpDiv)
 
-    shuffle_children(countryOptions)
+    shuffleChildren(countryOptions)
 }
 
 function initPrefixes(currentCountry) {
     let prefixOptions = document.getElementsByClassName('prefixOptions')[0];
     prefixOptions.innerHTML = '';
 
-    let randomCountry =  getRandomKey(prefixList)
+    let randomCountry =  getRandomKey(prefixListForLookup)
     currentCountry.innerText =  nameCleanup(randomCountry)
 
     // adding correct prefix to the list
-    let correctPrefix =  getSingleOrRandom(prefixList[randomCountry])
+    let correctPrefix =  getSingleOrRandom(prefixListForLookup[randomCountry])
     let tmpDiv = createDivWithTxtAndData(correctPrefix)
     tmpDiv.setAttribute("data-param", "correctAnswer");
     if (showCorrectStatus === true) {
@@ -136,7 +145,7 @@ function initPrefixes(currentCountry) {
     tmpDiv.addEventListener('click', checkAnswer)
     prefixOptions.appendChild(tmpDiv)
 
-    shuffle_children(prefixOptions)
+    shuffleChildren(prefixOptions)
 }
 
 function createDivWithTxtAndData(textContent) {
@@ -162,7 +171,7 @@ function checkAnswer() {
     }
 }
 
-function shuffle_children(element) {
+function shuffleChildren(element) {
     for (var i = element.children.length; i >= 0; i--) {
         element.appendChild(element.children[Math.random() * i | 0]);
     }
@@ -190,7 +199,7 @@ function findCountryByPrefix(prefixList, wantedPrefix) {
     return result.length === 0 ? ['/'] : result;
 }
 
-function updateResult() {
+function updateSearchResult() {
     const input = document.getElementById('twoLetterInput').value;
     const resultContainer = document.getElementById('result');
     resultContainer.innerHTML = ''; // Clear previous results
@@ -268,7 +277,7 @@ if ('serviceWorker' in navigator) {
     });
 
     twoLetterInput.addEventListener('input', function () {
-        updateResult();
+        updateSearchResult();
     });
 
     darkModeButton.addEventListener('click', function () {

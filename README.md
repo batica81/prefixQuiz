@@ -14,10 +14,8 @@ App is available for use or install at: https://prefixquiz.pages.dev/
 
 TODO:
 
-- Improve service worker and cache busting
-
+- Calculate points at guess time
 - Add fun effects
-
 - Improve line break for long names
-
-
+- Code cleanup
+- Improve service worker and cache busting
