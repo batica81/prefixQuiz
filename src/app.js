@@ -1,10 +1,3 @@
-
-const allCountries = Object.keys(prefixListForLookup);
-const allPrefixes = mergeArrays(prefixListForLookup);
-
-let randomCountry =  getRandomKey(prefixListForLookup)
-let countryPrefix = getSingleOrRandom(prefixListForLookup[randomCountry])
-
 let showCorrectStatus = false;
 let currentLang = "rs"; // Default language
 
@@ -134,7 +127,7 @@ function initPrefixes(currentCountry) {
         tmpDiv.classList.add('correctAnswer')
     } else {
         // create an array of prefixes excluding the correct one
-        let randomPrefixes = getRandomMembers(allPrefixes, 3, correctPrefix)
+        let randomPrefixes = getRandomMembers(mergeArrays(prefixListForLookup), 3, correctPrefix)
 
         randomPrefixes.forEach(rp => {
             let tmpDiv = createDivWithTxtAndData(rp)
@@ -149,13 +142,8 @@ function initPrefixes(currentCountry) {
 }
 
 function createDivWithTxtAndData(textContent) {
-    // Create a new div element
     let div = document.createElement("div");
-
-    // Set the text content
     div.textContent = textContent.replace(/0/g, "Ø");
-
-    // Optional: Add a class for styling
     div.classList.add("clickable-div");
     div.classList.add("answerWrapper");
     return div;

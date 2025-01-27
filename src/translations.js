@@ -18,7 +18,7 @@ const translations = {
     rs: {
         "Guess Prefix": "Prepoznaj prefiks",
         "Guess Country": "Prepoznaj državu",
-        "Prefix Lookup": "Pretraga prefiksa",
+        "Prefix Lookup": "Pretraži prefiks",
         "Dark Mode": "Noćni mod",
         "Show Correct": "Prikaži odgovor",
         "Enter prefix": "Unesi prefiks",
